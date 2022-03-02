@@ -1,0 +1,19 @@
+.container {
+    background-color: white;
+    height: 100vh;
+    margin-top: -1.3rem
+}
+
+.sectioncontainer {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.link {
+    color: rgb(32, 90, 179);
+}
+

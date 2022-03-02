@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+.contactcontainer {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    margin-top: -2rem
+}
+
+.secondcontainer {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.header {
+    font-family: "Roboto";
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.maintext {
+    font-family: "Roboto";
+    font-weight: 100;
+    max-width: 80ch;
+    margin:0 auto;
+}
+
+.formcontainer {
+    align-items: center;
+    display: flex; flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.formnames {
+    border-radius: 10px;
+    margin: 10px;
+    width: 60%;
+    text-align: center;
+}
+
+.formmain {
+    border-radius: 10px;
+    margin: 10px;
+    width: 60%;
+    height: 100px;
+    text-overflow: 60ch;
+}
