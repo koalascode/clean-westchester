@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '/styles/Home.module.css'
 import Globe from './globe.js'
-import Nav from './navbar.js'
 import Card from './cards.js'
 import { React } from 'react'
 //import Button from 'react-bootstrap/Button'; //npm install later so you can steal the citadel button to show people that they can scroll down
@@ -18,21 +17,19 @@ export default function Home() {
       <header>
 
       </header>
-    
       <br />
       <br />
-      <body>
-        <Nav />
+      
       <div className={styles.sectionone}>
         
         <Globe className={styles.globe} />
         
       </div>
       
-        <h3 className={styles.frontheader}>The world, as we know is, in endangered</h3>
-        <p className={styles.fronttext}>There are many conflicting studies about how much time we have left to take large climate action, <br /> but there is one thing that everyone agrees on: we need to act fast.</p> 
+        <h3 className={styles.frontheader}>First Environmental Fact</h3>
+        <p className={styles.fronttext}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p> 
         <div>
-        <Link href='#sectiontwo' className={styles.next} passHref><p><center>(next)</center></p></Link>
+        <Link href='#sectiontwo' passHref><p>(next)</p></Link>
         </div>
         
         <div className={styles.transparent}>
@@ -42,7 +39,7 @@ export default function Home() {
      <div className={styles.sectiontwo} id="sectiontwo"> 
      <br /><br />
       <article>
-        <p className={styles.sectiontwotext}>We at Clean Westchester are taking action, not with theoreticals, cheap talk, or meaningless fundraisers, but with actual boots on the ground action.</p>
+        <p className={styles.sectiontwotext}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
       </article>
       <br /><br />
      </div>
@@ -65,9 +62,6 @@ export default function Home() {
         </a>
       </div>
      </footer>
-      </body>
-    
-      
 
 
 
