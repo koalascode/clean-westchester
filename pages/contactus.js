@@ -35,7 +35,7 @@ export default function Contact() {
     return(
         <div className={styles.contactcontainer}>
             <div className={styles.secondcontainer}>
-                <br />
+            
                 <h1 className={styles.header}><center>Contact Us</center></h1>
                 <p className={styles.maintext}><center>Please contact us about joining the organization as a participant or a charter. Also, we are interested in lecturing at schools or other places. Finally, contact us with any queries, concerns, or suggestions. Thank you!</center></p>
                 <form onSubmit={dataHandler} className={styles.formcontainer}>
