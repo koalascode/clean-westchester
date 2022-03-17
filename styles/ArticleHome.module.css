@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+.container {
+    background-color: #FFFFFF;
+    
+    height: 110%;
+    min-width: 100%;
+}
+
+.header {
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sectionone {
+    margin-top: -2rem;
+}
+
+.aboutarticles {
+    color: black;
+    font-family: "Open Sans";
+    max-width: 80ch;
+    margin: 0 auto;
+}
+
+.localglobalbuttons {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 1rem;
+}
+
+.filterbutton {
+    border-radius: 15px;
+    width: 7rem;
+    background-color: rgb(37, 107, 211);
+    color: white;
+    font-family: "Open Sans";
+    transition: scale 500ms ease;
+}
+
+.filterbutton:hover {
+    opacity: .85;
+    scale: 1.08;
+}
+
+.cardscontainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.imagecredit {
+    text-align: center;
+    margin-top: -0.5rem;
+    font-size: 0.75rem;;
+}
+
+.articletitle {
+    font-size: 1.75rem;;
+}
+
+.articlesummary {
+    max-width: 80ch;
+    margin:0 auto;
+    font-size: .85rem;
+    font-family: "Open Sans";
+    font-size: .97rem;
+}
+
+
+.cardmain {
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+.textcontainer {
+    color: rgba(56, 55, 55, 0.8);
+    transition: color 300ms ease;
+}
+
+.textcontainer:hover {
+    color: black;
+}

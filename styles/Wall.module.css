@@ -1,0 +1,7 @@
+.wallcontainer {
+    color: white;
+}
+
+.textcontainer {
+    transform: translateY(200%);
+}

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+
+/**
+primary: #8c38ff;
+light: #EEEEEE;
+dark: #212121;
+**/
+
+.container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+    padding-bottom: 10rem;
+}
+
+.itemscontainer {
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: -1.7rem;
+    margin-bottom: -1.7rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: 2;
+    font-family: "Bebas Neue";
+    display: none;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: black;
+    padding: 1rem 2rem;
+    border-bottom: 3px solid #8c38ff;
+}
+
+.hamburger {
+    display: block;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    transition: scale 500ms ease;
+    
+}
+
+.hamburgerelement {
+    display: block;
+    width: 2rem;
+    height: 6px;
+    margin: 0.3rem;
+    position: relative;
+
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    z-index: 1;
+    transform-origin: 0 0;
+    transition: background-color 500ms ease;
+}
+
+.hamburger:hover {
+    scale: 1.1;
+}
+
+
+@media (min-width: 768px) {
+    .header {
+        display: block;
+    }
+    .menu {
+       width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Open Sans";
+        padding-bottom: 10rem;
+      }
+      
+      .itemscontainer {
+        
+        margin: 0 auto;
+        margin-bottom: -1rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+      
+      }
+      
+      .menu {
+        display: flex;
+        justify-content: flex-end;
+      }
+      
+      .menutext {
+          padding: 0 !important;
+          font-size: 0.75rem;
+      }
+}
+
+
+.menu {
+    display: flex;
+    flex: 1 1 0%;
+    justify-content: flex-end;
+    margin: 0 1rem;
+
+}
+
+.menutext {
+    color: #fff;
+    margin: 0 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 400ms;
+    padding: 8px 16px;
+    border-radius: 99px;
+    font-size: 1rem;
+}
+
+.menutext is-active {
+    background-color: #8c38ff;
+    
+}
+
+.menutext:hover {
+    background-color: #8c38ff;
+}
+
+
+.mobilenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    display: block;
+    z-index: 98;
+    background-color: black;
+    color: white;
+    display: none;
+}
