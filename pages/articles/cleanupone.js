@@ -26,7 +26,6 @@ export default function FirstCleanUp() {
                     <video  src="/lowresfirstcleanupclip.mp4" controls className={styles.video}/>
                     <p className={styles.maintext}>The participants of this clean up were: Aaron Anidjar, Kevin Daniel, and Rick Yang. <br /><br /><br />Future clean-ups will be posted.</p>
                 </section>
-             
             </div>
             <br /><br /><br />
         </div>
