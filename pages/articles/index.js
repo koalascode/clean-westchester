@@ -14,7 +14,6 @@ export default function ArticleHome() {
     const noFeaturedDisplay = (e) => {
         document.getElementById("featured").style.display = "none"
     }
-
     return(
         <div className={styles.container}>
             <Nav />

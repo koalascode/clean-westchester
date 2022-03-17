@@ -13,6 +13,7 @@ export default function OurWork() {
                 <div className={styles.textcontainer}>
                 <h2><center>Our First Clean Up!</center></h2>
                 <p className={styles.articlesummary}><center>We had our first ever clean up today!</center></p>
+                
                 <p><center>Written by Aaron Anidjar</center></p>
                 </div>
                 </Link>
