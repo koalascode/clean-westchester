@@ -61,7 +61,8 @@ export default function ArticleHome() {
                 </div>
 
                 <div className={styles.cardmain} id="global">
-                <Image src="/rickcleanupphoto.JPG" width={700} height={470} alt="photo of us cleaning Mamaroneck and Scarsdale" />
+                <Image src="/IMG_1061.jpg" width={700} height={470} alt="photo of us cleaning Mamaroneck and Scarsdale" />
+                
                 <Link href="/articles/cleanupone" passHref>
                 <div className={styles.textcontainer}>
                 <h2><center>Our First Clean Up!</center></h2>
