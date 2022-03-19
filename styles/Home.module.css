@@ -88,7 +88,8 @@
   margin-left: 2rem;
   font-size: clamp(3.5rem, 5vw, 4rem);
   color: white;
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", "Roboto";
+  font-weight: 900;
   z-index: 1;
  
 }
@@ -147,7 +148,7 @@
 .sectiontwotext {
   position: relative;
   font-size: 1.7rem;
-  font-family: "Mulish", "Nunito Sans", "Open Sans", "Bebas Neue";
+  font-family: "Mulish", "Roboto" "Nunito Sans", "Open Sans", "Bebas Neue";
   font-weight: 900;
   text-align: center;
   margin:0 auto;
