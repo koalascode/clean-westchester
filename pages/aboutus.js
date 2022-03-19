@@ -4,6 +4,8 @@ import Link from 'next/link'
 import AboutUsCard from '../components/aboutuscards'
 import styles from '../styles/About.module.css'
 import Nav from '../components/navbar'
+import LightFooter from '../components/navbarlightmode'
+
 
 export default function AboutUs() {
     return(
@@ -96,7 +98,7 @@ export default function AboutUs() {
                 </div>
             </div>
             </div>
-           
+          <LightFooter /> 
             </div>
         </div>
     )

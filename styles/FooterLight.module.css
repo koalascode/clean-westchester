@@ -1,0 +1,80 @@
+.container {
+
+}
+
+.footerflexbot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.foothead {
+    color: black;
+    font-family: "Bebas Neue", "Roboto";
+    font-weight: 900;
+    font-size: 2.5rem;
+  
+}
+
+.footmain {
+    color: black;
+    font-family: "Open Sans";
+    max-width: 50ch;
+   
+}
+
+.builtwithlovefooter {
+    color: black;
+}
+
+.sitescontainer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.linksheader {
+    color: black;
+    font-family: "Bebas Neue", "Roboto";
+    font-weight: 900;
+    font-size: 2.5rem;
+    
+}
+
+.links {
+    color: #1d935e;
+}
+
+.links:hover {
+    opacity: .85;
+   
+}
+
+.contactusheader {
+    color: black;
+    font-family: "Bebas Neue", "Roboto";
+    font-weight: 900;
+    font-size: 2.5rem; 
+}
+
+.standardform {
+    width: 18rem;
+    font-family: "Open Sans";
+}
+
+.bigformtextarea {
+    font-family: "Open Sans";
+    font-size: .85rem;
+}
+
+.submitbutton {
+    color: black;
+    background-color: rgb(60, 96, 227);
+    width: 4rem;
+    
+    border-radius: 15px;
+    margin: 0 auto;
+    display: block;
+}

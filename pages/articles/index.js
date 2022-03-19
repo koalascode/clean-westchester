@@ -7,6 +7,7 @@ import LocalTopics from './localtopics'
 import GlobalTopics from './globaltopics'
 import OurWork from './ourwork'
 import { useState } from 'react'
+import LightFooter from '../../components/navbarlightmode'
 
 export default function ArticleHome() {
     const [count, setCount] = useState()
@@ -71,8 +72,9 @@ export default function ArticleHome() {
                 </div>
                 </Link>
                 </div>
-               
+                
             </div>
+            <LightFooter />
         </div>
     )
 }
