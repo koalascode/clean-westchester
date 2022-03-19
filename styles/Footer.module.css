@@ -76,3 +76,10 @@
     margin: 0 auto;
     display: block;
 }
+
+.thanks {
+    display: none;
+    width: 10rem;
+    color: white;
+    
+}

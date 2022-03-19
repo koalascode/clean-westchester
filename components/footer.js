@@ -26,7 +26,13 @@ export default function Footer() {
                 console.log('FAILED...', error);
                 }
             );
-           
+          
+        e.target.email.style.display = "none"
+        e.target.name.style.display = "none"
+        e.target.textareamessage.style.display = "none"
+        e.target.submit.style.display = "none"
+        document.getElementById("thanks").style.display="flex"
+       
     }
     return (
         <div className={styles.container}>
@@ -76,7 +82,8 @@ export default function Footer() {
                        
                         <textarea placeholder="Enter your comment, query, or concern..." id="textareamessage" cols="36" rows="5" required className={styles.bigformtextarea}></textarea>
                         <br /><br />
-                        <input type="submit" value="Submit" className={styles.submitbutton}/>
+                        <input type="submit" value="Submit" id="submit" className={styles.submitbutton}/>
+                        <p className={styles.thanks} id="thanks">Thanks for Sending Us a Message, We'll Get Back to You Soon!</p>
                     </form>
                 </div>
     
