@@ -81,7 +81,7 @@ export default function AboutUs() {
                     
                 </div>
                 <div className={styles.member}>
-                    <Image src="/kevindaniels.png" width={360} height={600} className={styles.memberimage} alt="Rick Yang Photo Clean Westchester"/>
+                    <Image src="/rickprofilepicture.jpg" width={360} height={600} className={styles.memberimage} alt="Rick Yang Photo Clean Westchester"/>
                     <div className={styles.textcontainer}>
                     <h2 className={styles.membername}>Rick Yang</h2>
                     <p className={styles.membertitle}>Cofounder ♼, COO, Writer/Editor 📜</p>
