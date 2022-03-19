@@ -14,7 +14,7 @@ export default function FirstCleanUp() {
                 <h1 className={styles.title}>Our First Clean-Up</h1>
                 <section>
                 <p className={styles.maintext}>On Saturday, March 12th, Clean Westchester had its first clean-up in Mamaroneck and Scarsdale. We cleaned a portion of Mamaroneck Road and Griffin Avenue but got our cleaning cut short by the freezing rain. </p>
-                <Image src="/IMG_1056.jpg" width={670} height={450} className={styles.articlephoto} alt=""/>
+                <Image src="/kevinphotocleaningone.jpg" width={670} height={450} className={styles.articlephoto} alt=""/>
                 <p>Photo by Aaron Anidjar</p>
                 </section>
                 
