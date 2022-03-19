@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 .container {
     background-color: #FFFFFF;
@@ -124,6 +126,35 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.textcardscontained {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.cardsheader {
+    font-family: "Roboto";
+    font-weight: 700;
+    color: rgb(47, 47, 47);
+}
+
+.cardmaintext {
+    margin-left: 6rem;
+    margin-top: -1rem;
+    max-width: 42ch;
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: .95rem;
+}
+
+.iconphoto {
+    scale: 0.6;
+}
+
+.flexcardcontained {
+    display: flex;
 }
 
 .sectionthree {

@@ -24,17 +24,38 @@ export default function AboutUs() {
             <div className={styles.sectionthree}>
                 <br />
             <h2 className={styles.sectiontwomain}><center>What we do for the environment</center></h2>
-                <div className={styles.cardscontainer}>
+                <div className={styles.textcardscontained}>
                     <div>
-                    <Image src="/aboutusfour.png" width={480} height={202} className={styles.aboutussection} alt=""/>
-                    <Image src="/aboutusthree.png" width={505} height={194} className={styles.aboutussection} alt=""/>
+                        <div className={styles.flexcardcontained}>
+                            <Image src="/iconone.png" width={90} height={30} className={styles.iconphoto}/>
+                            <h1 className={styles.cardsheader}>Build Healthy Cities</h1>
+                        </div>
+                        <p className={styles.cardmaintext}>Our plans to clean Westchester are two pronged, clean cities and nature. Cleaning cities is vital, economically and environmentally, and clean cities are just nicer.</p>
                     </div>
-                    
+
                     <div>
-                    <Image src="/aboutustwo.png" width={470} height={202} className={styles.aboutussection} alt=""/>
-                    <Image src="/aboutusone.png" width={500} height={202} className={styles.aboutussection} alt=""/>
+                        <div className={styles.flexcardcontained}>
+                            <Image src="/icontwo.png" width={90} height={30} className={styles.iconphoto}/>
+                            <h1 className={styles.cardsheader}>Protect Land and Water</h1>
+                        </div>
+                        <p className={styles.cardmaintext}>We&apos;re trying to protect Westchester by cleaning, depolutting, promoting nature, and educating.</p>
                     </div>
-                    
+
+                    <div>
+                        <div className={styles.flexcardcontained}>
+                            <Image src="/iconthree.png" width={90} height={30} className={styles.iconphoto}/>
+                            <h1 className={styles.cardsheader}>Depollute Rivers and Lake</h1>
+                        </div>
+                        <p className={styles.cardmaintext}>Pollution in our rivers and lakes causes large issues, not only to wildlife, but for humans as well. We are working to reduce the amount of plastic waste that works its way into our rivers, lakes, and then our oceans.</p>
+                    </div>
+
+                    <div>
+                        <div className={styles.flexcardcontained}>
+                            <Image src="/iconfour.png" width={90} height={30} className={styles.iconphoto}/>
+                            <h1 className={styles.cardsheader}>Clean our Parks</h1>
+                        </div>
+                        <p className={styles.cardmaintext}>Our parks are riddled with everyday plastic waste, and other polutants. We are working to mitigate the issues that we face in our parks, and promote spending time in the outdoors.</p>
+                    </div>
                 </div>
                 <br />
             </div>
