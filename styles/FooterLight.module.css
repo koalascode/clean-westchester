@@ -80,22 +80,34 @@
 }
 
 .thanks {
- 
     width: 30rem;
     color: black;
-   
+    background-color: white;
+    font-family: "Open Sans";
+    border: none;
 }
 
 .thanks::backdrop {
-    background: linear-gradient(45deg,red,blue);
+    background: linear-gradient(45deg,rgb(43, 182, 101),rgb(208, 40, 214));
     opacity: .4;
+    border-radius: 10px;
 }
 
-.modalhead {
-    text-align: center;
+.thanks h2 {
     font-family: "Bebas Neue";
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: .01in;
 }
 
-.modalmain {
+.thanks p {
+    font-size: 1rem;
     text-align: center;
+    
+}
+
+.modalclosingbutton {
+    background-color: rgb(44, 110, 235);
+    color: white;
+    border-radius: 10px;
 }

@@ -31,6 +31,7 @@ export default function Footer() {
         e.target.name.style.display = "none"
         e.target.textareamessage.style.display = "none"
         e.target.submit.style.display = "none"
+        document.getElementById("contactus").style.display = "none"
 
         document.getElementById("thanks").showModal()
     }
@@ -78,7 +79,7 @@ export default function Footer() {
                     </Link>
                 </div>
                 <div>
-                    <h1 className={styles.contactusheader}>Contact Us</h1>
+                    <h1 className={styles.contactusheader} id="contactus">Contact Us</h1>
                     <form onSubmit={handleContact}>
                         <input type="email" placeholder="Email Address..." id="email" required className={styles.standardform}/>
                         <br /><br />
@@ -92,7 +93,6 @@ export default function Footer() {
                     <dialog className={styles.thanks} id="thanks">
                             <button  onClick={closeModal} id="modalclosingbutton" className={styles.modalclosingbutton}>x</button>
                             <h2 classname={styles.modalhead}><b>Thanks for Sending Us a Message</b></h2>
-                            <br />
                             <p classname={styles.modalmain}>We'll Get Back to You As Soon as Possibe!</p>
                         </dialog>
                 </div>
