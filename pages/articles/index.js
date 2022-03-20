@@ -7,7 +7,7 @@ import LocalTopics from './localtopics'
 import GlobalTopics from './globaltopics'
 import OurWork from './ourwork'
 import { useState } from 'react'
-import LightFooter from '../../components/navbarlightmode'
+import LightFooter from '../../components/footerlightmode.js'
 
 export default function ArticleHome() {
     const [count, setCount] = useState()

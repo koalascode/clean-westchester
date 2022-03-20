@@ -31,9 +31,14 @@ export default function Footer() {
         e.target.name.style.display = "none"
         e.target.textareamessage.style.display = "none"
         e.target.submit.style.display = "none"
-        document.getElementById("thanks").style.display="flex"
-       
+
+        document.getElementById("thanks").showModal()
     }
+
+   const closeModal = () => {
+      document.getElementById("thanks").close()
+    }
+
     return (
         <div className={styles.container}>
             <div className={styles.footerflexbot}>
@@ -79,16 +84,19 @@ export default function Footer() {
                         <br /><br />
                         <input type="text" placeholder='Name...' id="name" required className={styles.standardform}/>
                         <br /><br />
-                       
                         <textarea placeholder="Enter your comment, query, or concern..." id="textareamessage" cols="36" rows="5" required className={styles.bigformtextarea}></textarea>
                         <br /><br />
                         <input type="submit" value="Submit" id="submit" className={styles.submitbutton}/>
-                        <p className={styles.thanks} id="thanks">Thanks for Sending Us a Message, We'll Get Back to You Soon!</p>
+                        
                     </form>
+                    <dialog className={styles.thanks} id="thanks">
+                            <button  onClick={closeModal} id="modalclosingbutton" className={styles.modalclosingbutton}>x</button>
+                            <h2 classname={styles.modalhead}>Thanks for Sending Us a Message</h2>
+                            <br />
+                            <p classname={styles.modalmain}>We'll Get Back to You As Soon as Possibe!</p>
+                        </dialog>
                 </div>
-    
             </div>
-            
         </div>
     )
 }

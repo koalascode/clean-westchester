@@ -78,8 +78,22 @@
 }
 
 .thanks {
-    display: none;
-    width: 10rem;
+    width: 25rem;
     color: white;
-    
+    background-color: black;
+}
+
+.thanks::backdrop {
+    background: linear-gradient(45deg,red,blue);
+    opacity: .4;
+}
+
+.modalhead {
+    text-align: center;
+    font-family: "Bebas Neue";
+}
+
+.modalmain {
+    text-align: center;
+
 }
