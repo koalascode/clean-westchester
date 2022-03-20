@@ -94,3 +94,8 @@
     width: 300px;
     height: 300px;
   }
+
+  .formcontainer textarea {
+      font-family: "Open Sans";
+      font-size: .85rem;
+  }

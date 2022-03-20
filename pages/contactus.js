@@ -13,7 +13,9 @@ export default function Contact() {
         e.preventDefault()
         const email = e.target.email.value
         const name = e.target.fullname.value
-        const topic = e.target.query.value
+        const topic = e.target.querytextarea.value
+
+        console.log(realTopic)
 
         let templateParams = {
             to_name: 'Clean Westchester',
@@ -44,7 +46,7 @@ export default function Contact() {
                 <form onSubmit={dataHandler} className={styles.formcontainer}>
                     <input type="email" id="email" placeholder='Please enter your email' className={styles.formnames} required/>
                     <input type="text" id="fullname" placeholder='Please enter your full name' className={styles.formnames} required/>
-                    <input type="textarea" id="query" placeholder="Please contact us with your query, concern, or suggestion" className={styles.formmain} required></input>
+                    <textarea id="querytextarea" placeholder="Please contact us with your query, concern, or suggestion" cols="48" rows="7" required className={styles.bigformtextarea}></textarea>
                     <input type="submit" id="submitter" className={styles.button}/>
                 </form>
             </div>

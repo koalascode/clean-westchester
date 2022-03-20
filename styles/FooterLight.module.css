@@ -109,7 +109,8 @@
 .modalclosingbutton {
     background-color: rgb(44, 110, 235);
     color: white;
-    border-radius: 10px;
+    border: none;
+    width: 1.2rem;
 }
 
 .siteslink:hover {

@@ -32,12 +32,16 @@
 }
 
 .filterbutton {
-    border-radius: 15px;
+    border-radius: 5px;
+    height: 1.75rem;
+    border: none;
     width: 7rem;
     background-color: rgb(37, 107, 211);
     color: white;
     font-family: "Open Sans";
     transition: scale 500ms ease;
+    font-family: "Rubik";
+    font-weight: 400;
 }
 
 .filterbutton:hover {
