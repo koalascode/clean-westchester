@@ -90,7 +90,7 @@ export default function Footer() {
                         <br /><br />
                         <textarea placeholder="Enter your comment, query, or concern..." id="textareamessage" cols="36" rows="5" required className={styles.bigformtextarea}></textarea>
                         <br /><br />
-                        <input type="submit" value="Submit" id="submit" className={styles.submitbutton}/>
+                        <input type="submit" value="Submit" id="submit" className={styles.button}/>
                         
                     </form>
                     <dialog className={styles.thanks} id="thanks">

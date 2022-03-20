@@ -45,7 +45,7 @@ export default function Contact() {
                     <input type="email" id="email" placeholder='Please enter your email' className={styles.formnames} required/>
                     <input type="text" id="fullname" placeholder='Please enter your full name' className={styles.formnames} required/>
                     <input type="textarea" id="query" placeholder="Please contact us with your query, concern, or suggestion" className={styles.formmain} required></input>
-                    <input type="submit" id="submitter"/>
+                    <input type="submit" id="submitter" className={styles.button}/>
                 </form>
             </div>
         </div>

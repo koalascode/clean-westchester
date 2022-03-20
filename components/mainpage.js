@@ -53,7 +53,7 @@ export default function Home() {
           <h2 className={styles.sectionfourheader}><center>Join us as a chapter!</center></h2>
           <p><center className={styles.sectionfourmain}>We are intrested in expanding our efforts into more districts, if you are intrested in founding a chapter in your school district please contact us!</center></p>
           <Link href="/contactus" passHref>
-            <button className={styles.contactusbutton}>Contact Us!</button>
+            <button className={styles.button}>Contact Us!</button>
           </Link>
         </div>
         <div>
