@@ -404,7 +404,9 @@ body {
   color: var(--clr-neutral-900);
   background-color: var(--clr-accent-400);
   padding: 0.5em 1.25em;
-  border-radius: .25em;
+  border-radius: 6px;
+  border: none;
+  font-family: "Rubik";
 }
 
 .cardbutton:hover,
