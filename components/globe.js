@@ -54,11 +54,11 @@ class Globe extends Component {
         controls.autoRotate = false;
 
         navigator.userAgent.match(/iphone|android|blackberry/ig) ? controls.enabled=false : controls.enabled = true
-        //Animate:
+        //Animate:™¡
         function animate() {
             requestAnimationFrame(animate);
 
-            globe.rotation.x += 0.0002;
+            //globe.rotation.x += 0.0002;
             globe.rotation.y -= 0.00052;
             //globe.rotation.z += 0.0005;
 
