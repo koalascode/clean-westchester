@@ -1,4 +1,6 @@
-
+.container {
+    color: white;
+}
 
 .footerflexbot {
     display: flex;
@@ -81,11 +83,13 @@
     width: 25rem;
     color: white;
     background-color: black;
+    font-family: "Open Sans";
 }
 
 .thanks::backdrop {
     background: linear-gradient(45deg,red,blue);
     opacity: .4;
+    border-radius: 10px;
 }
 
 .modalhead {

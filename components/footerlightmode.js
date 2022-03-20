@@ -91,7 +91,7 @@ export default function Footer() {
                     </form>
                     <dialog className={styles.thanks} id="thanks">
                             <button  onClick={closeModal} id="modalclosingbutton" className={styles.modalclosingbutton}>x</button>
-                            <h2 classname={styles.modalhead}>Thanks for Sending Us a Message</h2>
+                            <h2 classname={styles.modalhead}><em>Thanks for Sending Us a Message</em></h2>
                             <br />
                             <p classname={styles.modalmain}>We'll Get Back to You As Soon as Possibe!</p>
                         </dialog>
