@@ -2,6 +2,7 @@ import React, { Component, useEffect } from "react";
 import ReactDOM from "react-dom";
 import * as THREE from 'three'
 import { MapControls, OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import {Fog} from "three"
 import styles from '../styles/Globe.module.css'
 class Globe extends Component {
     componentDidMount() {
@@ -40,9 +41,17 @@ class Globe extends Component {
 
         renderer.render(scene, camera);
 
+        scene.fog = new Fog(0x535ef3, 400, 2000);
+
         //Controls: 
         const controls = new OrbitControls(camera, renderer.domElement); //See if you remove this later, but it seems to be good to leave unchanged.
         controls.enableZoom = false;
+        controls.enableDamping = true;
+        controls.dynamicDampingFactor = 0.01;
+        controls.enablePan = false;
+        controls.rotateSpeed = 0.8;
+        controls.zoomSpeed = 1;
+        controls.autoRotate = false;
 
         navigator.userAgent.match(/iphone|android|blackberry/ig) ? controls.enabled=false : controls.enabled = true
         //Animate:
