@@ -49,14 +49,17 @@ export default function Footer() {
                     <br />
                     <p className={styles.builtwithlovefooter}><center>Built with ❤️ by Aaron Anidjar<br /> Aaron Anidjar | Rick Yang </center></p>
                     <div className={styles.sitescontainer}>
+                     <a href="https://www.instagram.com/clean.westchester/?hl=en">
+                        <Image src="/instagramlogo.webp" width={30} height={30} alt="Instagram logo"/>
+                        </a>
+                        <a href="mailto:cleanwestchester@gmail.com">
+                        <Image className={styles.siteslink} src="/gmaillogo.png" width={50} height={30} alt="gmail logo"/>
+                        </a>
                         <a href="https://github.com/koalascode" target="_blank" rel="noreferrer">
                         <Image className={styles.siteslink} src="/githublogo.png" width={30} height={30} alt="github logo"/>
                         </a>
                         <a href="https://www.youtube.com/channel/UCWXDVtw6EhVyX-2zL0KmtKw" target="_blank" rel="noreferrer">
                         <Image className={styles.siteslink} src="/ytlogo.png" width={30} height={30} alt="youtube logo"/>
-                        </a>
-                        <a href="mailto:cleanwestchester@gmail.com">
-                        <Image className={styles.siteslink} src="/gmaillogo.png" width={50} height={30} alt="gmail logo"/>
                         </a>
                         </div>
                     </div>

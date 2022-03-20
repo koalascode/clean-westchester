@@ -1,21 +1,6 @@
 {
   "/_app": "pages/_app.js",
-  "/aboutus": "pages/aboutus.html",
-  "/api/hello": "pages/api/hello.js",
-  "/articles/cleanupone": "pages/articles/cleanupone.html",
-  "/articles/congodeforestation": "pages/articles/congodeforestation.html",
-  "/articles/globaltopics": "pages/articles/globaltopics.html",
-  "/articles": "pages/articles.html",
-  "/articles/localtopics": "pages/articles/localtopics.html",
-  "/articles/ourwork": "pages/articles/ourwork.html",
-  "/articles/russiangasdependency": "pages/articles/russiangasdependency.html",
-  "/contactus": "pages/contactus.html",
-  "/home": "pages/home.html",
-  "/": "pages/index.html",
-  "/scarsdale": "pages/scarsdale.html",
-  "/thanksforsubmitting": "pages/thanksforsubmitting.html",
-  "/wallofheroes": "pages/wallofheroes.html",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/404": "pages/404.html"
+  "/": "pages/index.js"
 }
