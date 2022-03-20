@@ -111,3 +111,7 @@
     color: white;
     border-radius: 10px;
 }
+
+.siteslink:hover {
+    opacity: 0.85;
+}

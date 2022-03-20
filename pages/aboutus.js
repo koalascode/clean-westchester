@@ -84,7 +84,7 @@ export default function AboutUs() {
                     <Image src="/rickprofilepicture.jpg" width={360} height={600} className={styles.memberimage} alt="Rick Yang Photo Clean Westchester"/>
                     <div className={styles.textcontainer}>
                     <h2 className={styles.membername}>Rick Yang</h2>
-                    <p className={styles.membertitle}>Cofounder ♼, COO, Writer/Editor 📜</p>
+                    <p className={styles.membertitle}>Cofounder ♼, COO, Editor-in-Chief 📜, Writer ✍️</p>
                     </div>
                     
                 </div>
@@ -92,7 +92,7 @@ export default function AboutUs() {
                     <Image src="/kevindaniels.png" width={360} height={600} className={styles.memberimage} alt="Kevin Daniel Photo Clean Westchester"/>
                     <div className={styles.textcontainer}>
                     <h2 className={styles.membername}>Kevin Daniel</h2>
-                    <p className={styles.membertitle}>Writer ✍️, Editor 📜, Dog 🐶</p>
+                    <p className={styles.membertitle}>Editor 📜, Writer ✍️, Dog 🐶</p>
                 </div>
                     
                 </div>

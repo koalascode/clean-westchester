@@ -50,7 +50,7 @@ export default function Footer() {
                     <p className={styles.builtwithlovefooter}><center>Built with ❤️ by Aaron Anidjar<br /> Aaron Anidjar | Rick Yang </center></p>
                     <div className={styles.sitescontainer}>
                         <a href="https://www.instagram.com/clean.westchester/?hl=en">
-                        <Image src="/instagramlogo.webp" width={30} height={30} alt="Instagram logo"/>
+                        <Image className={styles.siteslink} src="/instagramlogo.webp" width={30} height={30} alt="Instagram logo"/>
                         </a>
                         <a href="mailto:cleanwestchester@gmail.com">
                         <Image className={styles.siteslink} src="/gmaillogo.png" width={50} height={30} alt="gmail logo"/>
