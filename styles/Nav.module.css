@@ -43,7 +43,7 @@ dark: #212121;
     z-index: 99;
     background-color: black;
     padding: 1rem 2rem;
-    border-bottom: 3px solid #8c38ff;
+    border-bottom: 3px solid #2cc19c;
 }
 
 .hamburger {
@@ -145,7 +145,7 @@ dark: #212121;
 }
 
 .menutext:hover {
-    background-color: #8c38ff;
+    background-color: #25846c;
 }
 
 
