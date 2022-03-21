@@ -70,6 +70,7 @@
     overflow: hidden;
     border-radius: 8px;
     border: none;
+    margin-top: .75rem;
   }
   
   .button:after {
@@ -98,4 +99,5 @@
   .formcontainer textarea {
       font-family: "Open Sans";
       font-size: .85rem;
+
   }

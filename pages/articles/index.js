@@ -27,12 +27,12 @@ export default function ArticleHome() {
                 <button className={styles.filterbutton} onClick={() => setCount("global")}>Global Topics</button>
                 <button className={styles.filterbutton} onClick={() => setCount("us")}>Our Work</button>
             </div>
-            {count === "local" ? <LocalTopics /> : console.log("noinfo")}
-            {count === "local" ? noFeaturedDisplay() : console.log("noinfo")}
-            {count === "global" ? <GlobalTopics /> : console.log("noinfo")}
-            {count === "global" ? noFeaturedDisplay() : console.log("noinfo")}
-            {count === "us" ? <OurWork /> : console.log("noinfo")}
-            {count === "us" ? noFeaturedDisplay() : console.log("noinfo")}
+            {count === "local" ? <LocalTopics /> : null}
+            {count === "local" ? noFeaturedDisplay() : null}
+            {count === "global" ? <GlobalTopics /> : null}
+            {count === "global" ? noFeaturedDisplay() : null}
+            {count === "us" ? <OurWork /> : null}
+            {count === "us" ? noFeaturedDisplay() : null}
             <br /><br />
             <div className={styles.cardscontainer} id="featured">
                 
