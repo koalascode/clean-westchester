@@ -161,3 +161,20 @@ dark: #212121;
     color: white;
     display: none;
 }
+
+.togglebutton {
+    display: block;
+    background-color: white;
+    color: red;
+}
+
+.mainlinkscontainer {
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+   display: block;
+}
+
+.pagelink {
+    color: white;
+}

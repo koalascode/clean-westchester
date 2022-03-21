@@ -7,10 +7,13 @@ import Link from 'next/link'
 import NightGlobe from './nightglobe.js'
 import Nav from './navbar.js'
 import Footer from './footer.js'
+import { useState } from 'react'
 //import Button from 'react-bootstrap/Button'; //npm install later so you can steal the citadel button to show people that they can scroll down
 //Add to head: <Link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 export default function FirefoxHome() {
+  const [count, setCount] = useState()
   return (
+
     <div className={styles.container} >
       <Head> 
       <title>Clean Westchester</title>
@@ -21,12 +24,44 @@ export default function FirefoxHome() {
       </header>
       <br />
       <br />
-    
+
       <div className={styles.sectionone}> 
-      <Nav className={styles.navbar}/>
+
+
+    <div className={styles.mainheader}>
+      <div className={styles.hamburgercontained} onClick={() => {
+        count === undefined ? setCount("on") : null ;
+        count === "on" ? setCount("off") : null;
+        count === "off" ? setCount("on"): null;
+      }}>
+        <span className={styles.bar}></span>
+        <span className={styles.bar}></span>
+        <span className={styles.bar}></span>
+      </div>
+      {count === "on" ? 
+      <div className={styles.mainlinkscontainer}> 
+        <Link href="/" passHref>
+          <h1 className={styles.sitelinks}>Home</h1>
+        </Link>
+        <Link href="/aboutus" passHref>
+          <h1 className={styles.sitelinks}>About Us</h1>
+        </Link>
+        <Link href="/articles" passHref>
+          <h1 className={styles.sitelinks}>Articles</h1>
+        </Link>
+        <Link href="/contactus" passHref>
+          <h1 className={styles.sitelinks}> Contact Us</h1>
+        </Link>
+        <Link href="/wallofheroes" passHref>
+          <h1 className={styles.sitelinks}>Wall of Heroes</h1>
+        </Link>
+      </div> : null}
+    </div>
+
+
       <br />
       {
-        new Date().getHours().toString() > 21 ? <NightGlobe className={styles.globe}/> : <Globe className={styles.globe}/>
+        new Date().getHours().toString() > 21 ? <div className={styles.globecontainer}><NightGlobe className={styles.globe}/></div> : <div className={styles.globecontainer}><Globe className={styles.globe}/></div>
       }
         
         <h3 className={styles.frontheader}>The world, as we know it, is endangered</h3>

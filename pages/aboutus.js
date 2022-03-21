@@ -5,12 +5,13 @@ import AboutUsCard from '../components/aboutuscards'
 import styles from '../styles/About.module.css'
 import Nav from '../components/navbar'
 import LightFooter from '../components/footerlightmode.js'
+import MinLightNav from '../components/minimalnavlight'
 
 
 export default function AboutUs() {
     return(
         <div className={styles.container}>
-            <Nav />
+            <MinLightNav/>
             <br />
                 <div className={styles.sectionone}>
                         <div className={styles.sectiononeimage}>

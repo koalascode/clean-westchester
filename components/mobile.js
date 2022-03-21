@@ -27,7 +27,7 @@ export default function Mobile() {
       <Nav />
       
       <div className={styles.sectionone}>
-
+            
       {
         new Date().getHours().toString() > 21 ? <NightGlobe className={styles.globe}/> : <Globe className={styles.globe}/>
       }

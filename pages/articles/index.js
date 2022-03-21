@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../../styles/ArticleHome.module.css'
-import Nav from '../../components/navbar'
+import MinLightNav from '../../components/minimalnavlight'
 import LocalTopics from './localtopics'
 import GlobalTopics from './globaltopics'
 import OurWork from './ourwork'
@@ -17,7 +17,7 @@ export default function ArticleHome() {
     }
     return(
         <div className={styles.container}>
-            <Nav />
+            <MinLightNav />
             <div className={styles.sectionone}>
                 <h1 className={styles.header}><center>Featured Articles</center></h1>
                 <p className={styles.aboutarticles}><center>As well as cleaning up Westchester, we are a resource for environmental issues across the world with our newsletter and articles. Here is our latest!</center></p>

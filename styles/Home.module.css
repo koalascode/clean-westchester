@@ -81,6 +81,7 @@
   width: 50%;
   transition: opacity 0.5s;
   opacity: 1;
+
 }
 
 .frontheader {
@@ -273,4 +274,61 @@
 .button:active:after {
   width: 300px;
   height: 300px;
+}
+
+.mainlinkscontainer {
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+
+.sitelinks {
+  color: white;
+  text-align: center;
+  font-family: "Bebas Neue", "Rubik";
+  font-size: 3rem;
+}
+
+.sitelinks:hover{
+  
+}
+
+.hamburgerbutton {
+  z-index: 99;
+}
+
+.bar {
+  display: block;
+  height: 3px;
+  width: 30px;
+  margin: 0.3rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+
+
+.hamburgercontained {
+  transform: translateY(7rem); 
+  margin-left: 85%;
+  margin-right: 10rem;
+}
+
+.mainlinkscontainer{animation: 1s ease-in 0s FadeIn;}
+@keyframes FadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+
+.hamburgercontained{animation: 1s ease-in 0s FadeIn;}
+@keyframes FadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
 }
