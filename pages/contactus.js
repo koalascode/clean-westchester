@@ -5,7 +5,7 @@ import styles from '../styles/Contact.module.css'
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import { useRouter } from "next/router"
-import Nav from '../components/navbar';
+import MinLightNav from '../components/minimalnavlight';
 
 export default function Contact() {
     const router = useRouter()
@@ -38,7 +38,7 @@ export default function Contact() {
     //console.log(properties)
     return(
         <div className={styles.contactcontainer}>
-            <Nav />
+            <MinLightNav />
             <div className={styles.secondcontainer}>
                 <br />
                 <h1 className={styles.header}><center>Contact Us</center></h1>
@@ -46,7 +46,7 @@ export default function Contact() {
                 <form onSubmit={dataHandler} className={styles.formcontainer}>
                     <input type="email" id="email" placeholder='Please enter your email' className={styles.formnames} required/>
                     <input type="text" id="fullname" placeholder='Please enter your full name' className={styles.formnames} required/>
-                    <textarea id="querytextarea" placeholder="Please contact us with your query, concern, or suggestion" cols="48" rows="7" required className={styles.bigformtextarea}></textarea>
+                    <textarea id="querytextarea" placeholder="Please contact us with your query, concern, or suggestion" rows="7" required className={styles.bigformtextarea}></textarea>
                     <input type="submit" id="submitter" className={styles.button}/>
                 </form>
             </div>

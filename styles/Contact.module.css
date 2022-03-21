@@ -9,7 +9,7 @@
 
 .secondcontainer {
     margin: 0;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
@@ -99,5 +99,5 @@
   .formcontainer textarea {
       font-family: "Open Sans";
       font-size: .85rem;
-
+      width: 60%;
   }
