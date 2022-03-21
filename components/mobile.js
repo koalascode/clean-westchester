@@ -36,7 +36,7 @@ export default function Mobile() {
       }
         
       </div>
-       
+      <br /><br /><br /><br /><br /> 
         <h3 className={styles.frontheader}>The world, as we know it, is endangered</h3>
         <p className={styles.fronttext}>There are many conflicting studies about how much time we have left to take large climate action, but there is one thing that everyone agrees on: <b>we need to act fast.</b></p> 
         
