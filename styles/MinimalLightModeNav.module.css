@@ -47,4 +47,8 @@
       }
   }
   
-  
+  @media (max-width: 500px) {
+    .hamburgercontained {
+        padding-bottom: 3rem;
+    }
+  }
