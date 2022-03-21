@@ -23,12 +23,13 @@ export default function FirefoxHome() {
       <header>
 
       </header>
-      <br />
-      <br />
+     
 
       <div className={styles.sectionone}> 
 
       <HamNavBar />
+      <br />
+      <br />
 
       <br />
       {
