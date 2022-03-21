@@ -8,6 +8,7 @@ import Card from './cards.js'
 import { React } from 'react'
 import Nav from './navbar.js'
 import Footer from './footer.js'
+import HamNavBar from './minimalnavbar.js'
 //import Button from 'react-bootstrap/Button'; //npm install later so you can steal the citadel button to show people that they can scroll down
 //Add to head: <Link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 export default function Home() {
@@ -23,7 +24,8 @@ export default function Home() {
      
      
       <div className={styles.sectionone}>
-      <Nav />
+      <HamNavBar />
+      <br /><br />
       {
         new Date().getHours().toString() > 21 ? <NightGlobe className={styles.globe}/> : <Globe className={styles.globe}/>
       }
