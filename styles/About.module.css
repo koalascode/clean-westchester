@@ -33,6 +33,7 @@
 }
 
 
+
 @keyframes colors {
     0% {
         color: white;
@@ -145,6 +146,13 @@
     color: rgb(47, 47, 47);
 }
 
+@media (max-width: 500px) {
+    .cardsheader {
+        font-size: 1.75rem;
+        max-width: 15ch;
+    }
+}
+
 .cardmaintext {
     margin-left: 6rem;
     margin-top: -1rem;
@@ -155,7 +163,7 @@
 }
 
 .iconphoto {
-    
+
     -webkit-transform:scale(0.6)
 }
 

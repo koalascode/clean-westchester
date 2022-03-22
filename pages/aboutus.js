@@ -47,7 +47,7 @@ export default function AboutUs() {
                     <div>
                         <div className={styles.flexcardcontained}>
                             <Image src="/iconthree.png" width={90} height={30} className={styles.iconphoto}/>
-                            <h1 className={styles.cardsheader}>Depollute Rivers and Lake</h1>
+                            <h1 className={styles.cardsheader}>Depollute Rivers and Lakes</h1>
                         </div>
                         <p className={styles.cardmaintext}>Pollution in our rivers and lakes causes large issues, not only to wildlife, but for humans as well. We are working to reduce the amount of plastic waste that works its way into our rivers, lakes, and then our oceans.</p>
                     </div>
