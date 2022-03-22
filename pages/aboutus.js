@@ -93,7 +93,7 @@ export default function AboutUs() {
                     <Image src="/kevindaniels.png" width={360} height={600} className={styles.memberimage} alt="Kevin Daniel Photo Clean Westchester"/>
                     <div className={styles.textcontainer}>
                     <h2 className={styles.membername}>Kevin Daniel</h2>
-                    <p className={styles.membertitle}>Editor 📜, Writer ✍️, Dog 🐶</p>
+                    <p className={styles.membertitle}> Head Writer ✍️, Editor 📜, CFO 🌳, Good Dog 🐶</p>
                 </div>
                     
                 </div>
