@@ -13,7 +13,13 @@
 }
 
 .sectionone {
-    margin-top: -2rem;
+    margin-top: -1.1rem;
+}
+
+@media (max-width: 500px) {
+    .sectionone {
+        margin-top: -2.5rem;
+    }
 }
 
 .aboutarticles {

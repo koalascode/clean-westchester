@@ -20,7 +20,7 @@ export default function ArticleHome() {
             <MinLightNav />
             <br />
             <div className={styles.sectionone}>
-            
+                <br /> 
                 <h1 className={styles.header}><center>Featured Articles</center></h1>
                 <p className={styles.aboutarticles}><center>As well as cleaning up Westchester, we are a resource for environmental issues across the world with our newsletter and articles. Here is our latest!</center></p>
             </div>
