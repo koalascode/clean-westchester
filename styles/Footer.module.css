@@ -45,6 +45,7 @@
 
 .links {
     color: #2cc19c;
+    cursor: pointer;
 }
 
 .links:hover {
@@ -111,6 +112,10 @@
     color: white;
     border: none;
     width: 1.2rem;
+}
+
+.siteslink {
+    cursor: pointer;
 }
 
 .siteslink:hover {

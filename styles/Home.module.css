@@ -315,7 +315,7 @@
   transform: translateY(7rem); 
   margin-left: 85%;
   margin-right: 10rem;
-  
+  cursor: pointer;
 }
 
 .hamburgercontained:hover {
