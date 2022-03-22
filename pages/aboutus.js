@@ -54,7 +54,7 @@ export default function AboutUs() {
 
                     <div>
                         <div className={styles.flexcardcontained}>
-                            <Image src="/iconfour.png" width={90} height={30} className={styles.iconphoto}/>
+                            <Image src="/iconfour.png" width={90} height={30} className={styles.iconphoto} id="lasticonphoto"/>
                             <h1 className={styles.cardsheader}>Clean our Parks</h1>
                         </div>
                         <p className={styles.cardmaintext}>Our parks are riddled with everyday plastic waste, and other polutants. We are working to mitigate the issues that we face in our parks, and promote spending time in the outdoors.</p>

@@ -148,8 +148,13 @@
 
 @media (max-width: 500px) {
     .cardsheader {
-        font-size: 1.75rem;
+        font-size: 1.45rem;
         max-width: 15ch;
+        text-align: left;
+       
+    }
+    .iconphoto {
+        margin-left: -1rem;
     }
 }
 
@@ -163,9 +168,11 @@
 }
 
 .iconphoto {
-
+    margin: 0;
+    padding: 0;
     -webkit-transform:scale(0.6)
 }
+
 
 .flexcardcontained {
     display: flex;
