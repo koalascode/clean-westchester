@@ -352,3 +352,8 @@
   scale: 1.15;
 }
 
+@media (max-width: 500px) {
+  .scalehamburger:hover {
+    scale: 1 !important;
+  }
+}

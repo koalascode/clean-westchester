@@ -67,4 +67,8 @@
     .hamburgercontained {
         padding-bottom: 3rem;
     }
+
+    .scalehamburger:hover {
+      scale: 1 !important;
+    }
   }
