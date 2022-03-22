@@ -343,13 +343,13 @@
 }
 
 .scalehamburger {
-  transition: scale 500ms ease;
+  transition: transform 500ms ease;
   position: fixed;
   border-radius: 15px;
 }
 
 .scalehamburger:hover{
-  scale: 1.15;
+  transform: scale(1.15);
 }
 
 @media (max-width: 500px) {
