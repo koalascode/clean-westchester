@@ -286,10 +286,14 @@
   text-align: center;
   font-family: "Bebas Neue", "Rubik";
   font-size: 3rem;
+  cursor: pointer;
+  padding: 0;
+
+  transition: color 500ms ease;
 }
 
 .sitelinks:hover{
-  
+  color: #2c6dc8;
 }
 
 .hamburgerbutton {
@@ -311,6 +315,11 @@
   transform: translateY(7rem); 
   margin-left: 85%;
   margin-right: 10rem;
+  
+}
+
+.hamburgercontained:hover {
+
 }
 
 .mainlinkscontainer{animation: 1s ease-in 0s FadeIn;}
@@ -332,3 +341,14 @@
       opacity:1;
     }
 }
+
+.scalehamburger {
+  transition: scale 500ms ease;
+  position: fixed;
+  border-radius: 15px;
+}
+
+.scalehamburger:hover{
+  scale: 1.15;
+}
+

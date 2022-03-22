@@ -122,10 +122,15 @@
     justify-content: space-between;
     flex-wrap: wrap;
     place-items: center;
-    gap: rem;
+    gap: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    
+}
+
+.cardscontainer:hover {
+    
 }
 
 .textcardscontained {
@@ -157,6 +162,11 @@
 .flexcardcontained {
     display: flex;
     flex-wrap: wrap;
+    transition: box-shadow 500ms ease;
+}
+
+.flexcardcontained:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
 
 .sectionthree {

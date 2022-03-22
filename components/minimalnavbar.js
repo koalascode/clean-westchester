@@ -11,9 +11,13 @@ export default function HamNavBar() {
           count === "on" ? setCount("off") : null;
           count === "off" ? setCount("on"): null;
         }}>
-          <span className={styles.bar}></span>
-          <span className={styles.bar}></span>
-          <span className={styles.bar}></span>
+          <div className={styles.scalehamburger}>
+          <span className={styles.bar} id="linetop"></span>
+          <span className={styles.bar} id="linemid"></span>
+          <span className={styles.bar} id="linebot"></span>
+          </div>
+
+         
         </div>
         {count === "on" ? 
         <div className={styles.mainlinkscontainer}> 

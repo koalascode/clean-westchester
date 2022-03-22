@@ -11,9 +11,11 @@ export default function MinLightNav() {
           count === "on" ? setCount("off") : null;
           count === "off" ? setCount("on"): null;
         }}>
+          <div className={styles.scalehamburger}>
           <span className={styles.bar}></span>
           <span className={styles.bar}></span>
           <span className={styles.bar}></span>
+          </div>
         </div>
         {count === "on" ? 
         <div className={styles.mainlinkscontainer}> 
