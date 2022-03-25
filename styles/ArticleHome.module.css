@@ -20,6 +20,11 @@
     .sectionone {
         margin-top: -2.5rem;
     }
+
+    .filterbutton {
+        padding: 0;
+
+    }
 }
 
 .aboutarticles {
@@ -90,6 +95,7 @@
 .textcontainer {
     color: rgba(56, 55, 55, 0.8);
     transition: color 300ms ease;
+    cursor: pointer;
 }
 
 .textcontainer:hover {

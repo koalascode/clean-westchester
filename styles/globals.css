@@ -407,11 +407,13 @@ body {
   border-radius: 6px;
   border: none;
   font-family: "Rubik";
+  
 }
 
 .cardbutton:hover,
 .cardbutton:focus {
   background-color: var(--clr-neutral-100);
+
 }
 .cardbody {
   color: rgb(255 255 255 /0.85)
