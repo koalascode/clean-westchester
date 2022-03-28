@@ -30,6 +30,11 @@
       "static/chunks/main.js",
       "static/chunks/pages/articles.js"
     ],
+    "/articles/cleanupone": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/articles/cleanupone.js"
+    ],
     "/articles/environmentalissuesonglobalscale": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

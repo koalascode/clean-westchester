@@ -41,7 +41,7 @@ export default function ArticleHome() {
             <div className={styles.cardmain} id="global">
                 <Image src="/deforestation.webp" width={750} height={470} alt="photo of us cleaning Mamaroneck and Scarsdale" />
                 
-                <Link href="/articles/cleanupone" passHref>
+                <Link href="/articles/environmentalissuesonglobalscale" passHref>
                 <div className={styles.textcontainer}>
                 <p className={styles.imagecredit}>Photo by Ulet Ifansasti </p>
                 <h2><center>Environment Issues on a Global Scale: Now is the Time to Act</center></h2>
