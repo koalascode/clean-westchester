@@ -38,19 +38,19 @@ export default function ArticleHome() {
             <br /><br />
             <div className={styles.cardscontainer} id="featured">
                 
-                <div className={styles.cardmain} id="global">
-                    <Image src="/russiangascover.png" width={750} height={470} alt="photo of war between Russia and Ukraine" />
-                    <Link href="/articles/russiangasdependency" passHref>
-                    <div className={styles.textcontainer}>
-                    <p className={styles.imagecredit}>Photo by Andrey Rudakov</p>
-                    <h2><center>The issue with Russia, Gas, and Dependancies.</center></h2>
-                    <p className={styles.articlesummary}><center>The recent war between Russia and Ukraine has shed light on an issue that has long been known, the dependancies we have on gas.</center></p>
-                    <p><center>Written by Aaron Anidjar</center></p>
-                    </div>
-                    </Link>
-                </div>
-               
+            <div className={styles.cardmain} id="global">
+                <Image src="/deforestation.webp" width={750} height={470} alt="photo of us cleaning Mamaroneck and Scarsdale" />
                 
+                <Link href="/articles/cleanupone" passHref>
+                <div className={styles.textcontainer}>
+                <p className={styles.imagecredit}>Photo by Ulet Ifansasti </p>
+                <h2><center>Environment Issues on a Global Scale: Now is the Time to Act</center></h2>
+                <p className={styles.articlesummary}><center>We have 8 years to prevent the inevitable extinction of humans as a species. By 2030, if no collective international actions are taken towards halting our current global path regarding climate change, experts predict that it will be too late; rates of warming could become irreversible, and environmental repercussions could cause the human race and all biodiversity on Earth to deteriorate progressively.</center></p>
+                <p><center>Written by Rick Yang</center></p>
+                </div>
+                </Link>
+                </div>
+
                 <div className={styles.cardmain} id="global">
                     <Image src="/congoimagecover.jpg" width={750} height={470} alt="photo of some environmental thing that hasn't been added to the site yet"/>
                     <Link href="/articles/congodeforestation" passHref>
@@ -64,6 +64,21 @@ export default function ArticleHome() {
                 </div>
 
                 <div className={styles.cardmain} id="global">
+                    <Image src="/russiangascover.png" width={750} height={470} alt="photo of war between Russia and Ukraine" />
+                    <Link href="/articles/russiangasdependency" passHref>
+                    <div className={styles.textcontainer}>
+                    <p className={styles.imagecredit}>Photo by Andrey Rudakov</p>
+                    <h2><center>The issue with Russia, Gas, and Dependancies.</center></h2>
+                    <p className={styles.articlesummary}><center>The recent war between Russia and Ukraine has shed light on an issue that has long been known, the dependancies we have on gas.</center></p>
+                    <p><center>Written by Aaron Anidjar</center></p>
+                    </div>
+                    </Link>
+                </div>
+               
+                
+               
+
+                <div className={styles.cardmain} id="global">
                 <Image src="/rickphotocleaningone.jpg" width={750} height={470} alt="photo of us cleaning Mamaroneck and Scarsdale" />
                 
                 <Link href="/articles/cleanupone" passHref>
@@ -74,6 +89,8 @@ export default function ArticleHome() {
                 </div>
                 </Link>
                 </div>
+
+                
                 
             </div>
             <LightFooter />

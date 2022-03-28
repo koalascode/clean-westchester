@@ -81,6 +81,12 @@
 
 .linktext {
     color: blueviolet;
+    cursor: pointer;
+    transition: transform 500ms ease;
+}
+
+.linktext:hover {
+    transform: translateY(.15rem);
 }
 
 .photobiobiggap {

@@ -9,6 +9,7 @@ import Nav from './navbar.js'
 import Footer from './footer.js'
 import { useState } from 'react'
 import HamNavBar from './minimalnavbar.js'
+import Countdown from './countdown.js'
 //import Button from 'react-bootstrap/Button'; //npm install later so you can steal the citadel button to show people that they can scroll down
 //Add to head: <Link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 export default function FirefoxHome() {
@@ -26,7 +27,7 @@ export default function FirefoxHome() {
      
 
       <div className={styles.sectionone}> 
-
+     
       <HamNavBar />
       <br />
       <br />
