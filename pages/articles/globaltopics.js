@@ -5,7 +5,18 @@ import Image from "next/image"
 export default function GlobalTopics() {
     return (
         <div className={styles.cardscontainer}>
+            <div className={styles.cardmain} id="global">
+                <Image src="/deforestation.webp" width={750} height={470} alt="photo of us cleaning Mamaroneck and Scarsdale" />
                 
+                <Link href="/articles/environmentalissuesonglobalscale" passHref>
+                <div className={styles.textcontainer}>
+                <p className={styles.imagecredit}>Photo by Ulet Ifansasti </p>
+                <h2><center>Environment Issues on a Global Scale: Now is the Time to Act</center></h2>
+                <p className={styles.articlesummary}><center>We have 8 years to prevent the inevitable extinction of humans as a species. By 2030, if no collective international actions are taken towards halting our current global path regarding climate change, experts predict that it will be too late; rates of warming could become irreversible, and environmental repercussions could cause the human race and all biodiversity on Earth to deteriorate progressively.</center></p>
+                <p><center>Written by Rick Yang</center></p>
+                </div>
+                </Link>
+                </div>      
         <div className={styles.cardmain} id="global">
             <Image src="/russiangascover.png" width={750} height={470} alt="photo of war between Russia and Ukraine" />
             <Link href="/articles/russiangasdependency" passHref>
@@ -27,17 +38,6 @@ export default function GlobalTopics() {
             <h2 className={styles.articletitle}><center>Deforestation in the Congo</center></h2>
             <p className={styles.articlesummary}><center>Deforestation in the Congo Is Still a Pressing Environmental Issue; How Is the World Responding?</center></p>
             <p><center>Written by Kevin Daniel</center></p>
-            </div>
-            </Link>
-        </div>
-
-        <div className={styles.cardmain} id="local">
-            <Image src="/testhawaiiphoto.jpg" width={750} height={470} alt="photo of some environmental thing that hasn't been added to the site yet"/>
-            <Link href="/articles/russiangasdependency" passHref>
-            <div className={styles.textcontainer}>
-            <h2 className={styles.articletitle}><center>Article Two Global</center></h2>
-            <p className={styles.articlesummary}><center>Article 3 global short little summary something something something something something something something something something.</center></p>
-            <p><center>Written by Aaron Anidjar</center></p>
             </div>
             </Link>
         </div>
