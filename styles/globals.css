@@ -45,6 +45,7 @@ body {
   background: var(--clr-neutral-900); 
   font-family: sans-serif;
   background-color: black;
+  scroll-behavior: smooth;
 }
 
 
