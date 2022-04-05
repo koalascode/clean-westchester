@@ -15,7 +15,7 @@ export default function Contact() {
         const name = e.target.fullname.value
         const topic = e.target.querytextarea.value
 
-        console.log(realTopic)
+        console.log(topic)
 
         let templateParams = {
             to_name: 'Clean Westchester',
