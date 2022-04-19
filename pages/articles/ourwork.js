@@ -8,7 +8,7 @@ export default function OurWork() {
         <div className={styles.cardscontainer}>
             
             <div className={styles.cardmain} id="global">
-                <Image src="/rickphotocleaningone.jpg" width={750} height={470} alt="photo of us cleaning Mamaroneck and Scarsdale" />
+                <Image src="/rickphotocleaningone.jpg" width={750} height={470} alt="photo of us cleaning Mamaroneck and Scarsdale" className={styles.coverimage}/>
                 <Link href="/articles/cleanupone" passHref>
                 <div className={styles.textcontainer}>
                 <h2><center>Our First Clean Up!</center></h2>

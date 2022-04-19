@@ -88,7 +88,7 @@ export default function Footer() {
                         <br /><br />
                         <input type="text" placeholder='Name...' id="name" required className={styles.standardform}/>
                         <br /><br />
-                        <textarea placeholder="Enter your comment, query, or concern..." id="textareamessage" cols="36" rows="5" required className={styles.bigformtextarea}></textarea>
+                        <textarea placeholder="Enter your comment, query, or concern..." id="textareamessage" cols="38" rows="5" required className={styles.bigformtextarea}></textarea>
                         <br /><br />
                         <input type="submit" value="Submit" id="submit" className={styles.button}/>
                         

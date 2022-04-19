@@ -6,7 +6,7 @@ export default function GlobalTopics() {
     return (
         <div className={styles.cardscontainer}>
             <div className={styles.cardmain} id="global">
-                <Image src="/deforestation.webp" width={750} height={470} alt="photo of us cleaning Mamaroneck and Scarsdale" />
+                <Image src="/deforestation.webp" width={750} height={470} alt="photo of us cleaning Mamaroneck and Scarsdale" className={styles.coverimage}/>
                 
                 <Link href="/articles/environmentalissuesonglobalscale" passHref>
                 <div className={styles.textcontainer}>
@@ -18,7 +18,7 @@ export default function GlobalTopics() {
                 </Link>
                 </div>      
         <div className={styles.cardmain} id="global">
-            <Image src="/russiangascover.png" width={750} height={470} alt="photo of war between Russia and Ukraine" />
+            <Image src="/russiangascover.png" width={750} height={470} alt="photo of war between Russia and Ukraine" className={styles.coverimage}/>
             <Link href="/articles/russiangasdependency" passHref>
             <div className={styles.textcontainer}>
             <p className={styles.imagecredit}>Photo by Andrey Rudakov</p>
@@ -31,7 +31,7 @@ export default function GlobalTopics() {
        
         
         <div className={styles.cardmain} id="global">
-            <Image src="/congoimagecover.jpg" width={750} height={470} alt="photo of some environmental thing that hasn't been added to the site yet"/>
+            <Image src="/congoimagecover.jpg" width={750} height={470} alt="photo of some environmental thing that hasn't been added to the site yet" className={styles.coverimage}/>
             <Link href="/articles/congodeforestation" passHref>
             <div className={styles.textcontainer}>
             <p className={styles.imagecredit}>Photo by Matthias Vanmaercke</p>

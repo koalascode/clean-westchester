@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Rubik:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Rubik:wght@400;500&display=swap");
 
 :root {
   --clr-neutral-900: hsl(207, 19%, 9%);
@@ -14,11 +14,10 @@
 }
 
 .noglobalstyles > div {
-  color: black;
+  background-color: white;
   text-decoration: none;
   cursor: pointer;
 }
-
 
 *,
 *::before,
@@ -27,10 +26,10 @@
 }
 
 body::--webkit-scrollbar {
-  width:0.25rem  
+  width: 0.25rem;
 }
 
-body::--webkit-scrollbar-track { 
+body::--webkit-scrollbar-track {
   background: #1e1e24;
 }
 
@@ -42,13 +41,11 @@ body {
   min-height: 100vh;
   font-size: 14px;
   line-height: 1.6;
-  background: var(--clr-neutral-900); 
+  background: var(--clr-neutral-900);
   font-family: sans-serif;
   background-color: black;
   scroll-behavior: smooth;
 }
-
-
 
 .card {
   color: var(--clr-neutral-100);
@@ -147,7 +144,8 @@ body {
 .card-six:hover,
 .card-six:focus-within,
 .card-seven:hover,
-.card-seven:focus-within { /*The focus within makes it so that when someone focuses (tabs or other keyboard command) into somehting within the card then it focuses*/
+.card-seven:focus-within {
+  /*The focus within makes it so that when someone focuses (tabs or other keyboard command) into somehting within the card then it focuses*/
   transform: scale(1.05);
 }
 
@@ -156,9 +154,9 @@ body {
   padding: var(--padding);
   background: linear-gradient(
     hsl(0 0% 0% / 0),
-    hsl(0 0% 0% / .3) 20%,
+    hsl(0 0% 0% / 0.3) 20%,
     hsl(0 0% 0% / 1)
-    );
+  );
 }
 
 .card-content-two {
@@ -166,9 +164,9 @@ body {
   padding: var(--padding);
   background: linear-gradient(
     hsl(0 0% 0% / 0),
-    hsl(0 0% 0% / .3) 20%,
+    hsl(0 0% 0% / 0.3) 20%,
     hsl(0 0% 0% / 1)
-    );
+  );
 }
 
 .card-content-three {
@@ -176,9 +174,9 @@ body {
   padding: var(--padding);
   background: linear-gradient(
     hsl(0 0% 0% / 0),
-    hsl(0 0% 0% / .3) 20%,
+    hsl(0 0% 0% / 0.3) 20%,
     hsl(0 0% 0% / 1)
-    );
+  );
 }
 
 .card-content-four {
@@ -186,9 +184,9 @@ body {
   padding: var(--padding);
   background: linear-gradient(
     hsl(0 0% 0% / 0),
-    hsl(0 0% 0% / .3) 20%,
+    hsl(0 0% 0% / 0.3) 20%,
     hsl(0 0% 0% / 1)
-    );
+  );
 }
 
 @media (hover) {
@@ -196,7 +194,9 @@ body {
   .card-content-two,
   .card-content-three,
   .card-content-four {
-    transform: translateY(65%); /*Whenever we can we should use transform instead of changing position*/
+    transform: translateY(
+      65%
+    ); /*Whenever we can we should use transform instead of changing position*/
     transition: transform 500ms ease;
   }
 
@@ -254,9 +254,9 @@ body {
   .card-seven:focus-within .card-content-two,
   .card-seven:hover .card-content-three,
   .card-seven:focus-within .card-content-three {
-  transform: translateY(0);
-  transition-delay: 500ms; /*Delays when hover but not when remmoving hover*/
-} 
+    transform: translateY(0);
+    transition-delay: 500ms; /*Delays when hover but not when remmoving hover*/
+  }
 
   .card:focus-within .card-content,
   .card:focus-within .card-content-two,
@@ -286,23 +286,22 @@ body {
   .card-seven:focus-within .card-content-two,
   .card-seven:focus-within .card-content-three,
   .card-seven:focus-within .card-content-four {
-  transition-duration: 0ms;
-}
+    transition-duration: 0ms;
+  }
 
   .card-content > *:not(.cardtitle),
   .card-content-two > *:not(.cardtitle),
   .card-content-three > *:not(.cardtitle),
-  .card-content-four > *:not(.cardtitle) { /*The :not() means except, sp this will change opacity for everything except for the title so that the card keeps a title no matter what.*/
-  opacity: 0;
-  transition: opacity 500ms linear;
-}
+  .card-content-four > *:not(.cardtitle) {
+    /*The :not() means except, sp this will change opacity for everything except for the title so that the card keeps a title no matter what.*/
+    opacity: 0;
+    transition: opacity 500ms linear;
+  }
 
-.cardtitle:after {
-  transform: scaleX(0);
+  .cardtitle:after {
+    transform: scaleX(0);
+  }
 }
-}
-
-
 
 .card:hover .card-content > *:not(.cardtitle),
 .card:focus-within .card-content > *:not(.cardtitle),
@@ -375,7 +374,7 @@ body {
   height: 4px;
   left: calc(var(--padding) * -1);
   bottom: -2px;
-  width:calc(100% + var(--padding));
+  width: calc(100% + var(--padding));
   background: var(--clr-accent-400);
   transform-origin: left;
   transition: transform 500ms ease; /*These last two are for the transition.*/
@@ -395,7 +394,7 @@ body {
 .card-six:focus-within .cardtitle::after,
 .card-seven:hover .cardtitle::after,
 .card-seven:focus-within .cardtitle::after {
-  transform: scaleX(1)
+  transform: scaleX(1);
 }
 
 .cardbutton {
@@ -408,16 +407,14 @@ body {
   border-radius: 6px;
   border: none;
   font-family: "Rubik";
-  
 }
 
 .cardbutton:hover,
 .cardbutton:focus {
   background-color: var(--clr-neutral-100);
-
 }
 .cardbody {
-  color: rgb(255 255 255 /0.85)
+  color: rgb(255 255 255 /0.85);
 }
 
 .cardscontainered {
@@ -425,34 +422,32 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
   *::after {
-    animation-duration: 0.01ms
-    !important;
-    animation-iteration-count: 1
-    !important;
-    transition-duration: 0.01ms
-    !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
     transition-delay: 0ms !important;
   }
 }
 
 body::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+  width: 12px; /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: rgb(0, 0, 0);        /* color of the tracking area */
+  background: rgb(0, 0, 0); /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: rgb(38, 187, 157);    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid rgb(0, 0, 0);  /* creates padding around scroll thumb */
-  
+  background-color: rgb(38, 187, 157); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid rgb(0, 0, 0); /* creates padding around scroll thumb */
 }

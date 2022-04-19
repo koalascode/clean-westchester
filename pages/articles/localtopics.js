@@ -7,7 +7,7 @@ export default function LocalTopics() {
         <div>
             <div className={styles.cardscontainer}>
                 <div className={styles.cardmain} id="global">
-                    <Image src="/testhawaiiphoto.jpg" width={750} height={470} alt="photo of war between Russia and Ukraine" />
+                    <Image src="/testhawaiiphoto.jpg" width={750} height={470} alt="photo of war between Russia and Ukraine" className={styles.coverimage}/>
                     <Link href="/articles/russiangasdependency" passHref>
                     <div className={styles.textcontainer}>
                     <h2><center>Local Topic</center></h2>
@@ -19,7 +19,7 @@ export default function LocalTopics() {
                
                 
                 <div className={styles.cardmain} id="global">
-                    <Image src="/testhawaiiphoto.jpg" width={750} height={470} alt="photo of some environmental thing that hasn't been added to the site yet"/>
+                    <Image src="/testhawaiiphoto.jpg" width={750} height={470} alt="photo of some environmental thing that hasn't been added to the site yet" className={styles.coverimage}/>
                     <Link href="/articles/russiangasdependency" passHref>
                     <div className={styles.textcontainer}>
                     <h2><center>Article Three</center></h2>
@@ -30,7 +30,7 @@ export default function LocalTopics() {
                 </div>
 
                 <div className={styles.cardmain} id="local">
-                    <Image src="/testhawaiiphoto.jpg" width={750} height={470} alt="photo of some environmental thing that hasn't been added to the site yet"/>
+                    <Image src="/testhawaiiphoto.jpg" width={750} height={470} alt="photo of some environmental thing that hasn't been added to the site yet" className={styles.coverimage}/>
                     <Link href="/articles/russiangasdependency" passHref>
                     <div className={styles.textcontainer}>
                     <h2><center>Article Three Local</center></h2>

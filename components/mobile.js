@@ -51,25 +51,38 @@ export default function Mobile() {
       </article>
       <br /><br />
      </div>
+     <div className={styles.wildwest}>
+      <div>
+        <Image src="/rickphotocleaningone.jpg" width={580} height={400} className={styles.sideimage}/>
+      </div>
+      <div>
+        <h1 className={styles.sideimagetexthead}>What we <b className={styles.accentedtext}>are Doing</b> 🌳</h1>
+        <p className={styles.sideimagetextmain}>Our main goal is to make Westchester a cleaner place for everyone, and the way that we approach that is multifaceted, with approaches such as clean ups and informative articles surrounding pressing environmental issues.</p>
+        <Link href="/aboutus" passHref>
+          <button className={styles.button}>Learn More</button>
+        </Link>
+       
+      </div>
+    </div>
      <div className={styles.sectionthree}>
        <br />
         <Card className={styles.card}/> 
       <br /><br />
      </div>
-     <div className={styles.sectionfour}>
-       <div>
-          <h2 className={styles.sectionfourheader}><center>Join us as a chapter!</center></h2>
-          <p><center className={styles.sectionfourmain}>We are intrested in expanding our efforts into more districts, if you are intrested in founding a chapter in your school district please contact us!</center></p>
-          <Link href="/contactus" passHref>
-            <button className={styles.button}>Contact Us!</button>
-          </Link>
-        </div>
-        <div>
-          <Image className={styles.sectionfourimage} src="/beeimage.jpg" width={400} height={300} alt="image of our work cleaning"/>
-        </div>
-       
+     <div className={styles.wildwest}>
+     
+     <div>
+       <h1 className={styles.sideimagetexthead}>Join us as <b className={styles.accentedtext}>a Chapter!</b> </h1>
+       <p className={styles.sideimagetextmain}>We are intrested in expanding our efforts into more districts, if you are intrested in founding a chapter in your school district please contact us!</p>
+       <Link href="/contactus" passHref>
+         <button className={styles.button}>Contact Us</button>
+       </Link>
       
      </div>
+     <div>
+       <Image src="/beeimage.jpg" width={400} height={300} className={styles.sideimage}/>
+     </div>
+   </div>
       <Footer />
 
     </div>
