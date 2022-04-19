@@ -65,7 +65,7 @@ export default function Home() {
      <div className={styles.wildwest}>
      
       <div>
-        <h1 className={styles.sideimagetexthead}>Join us as <b className={styles.accentedtext}>a Chapter!</b> 🌳</h1>
+        <h1 className={styles.sideimagetexthead}>Join us as <b className={styles.accentedtext}>a Chapter!</b> 📚</h1>
         <p className={styles.sideimagetextmain}>We are intrested in expanding our efforts into more districts, if you are intrested in founding a chapter in your school district please contact us!</p>
         <Link href="/contactus" passHref>
           <button className={styles.button}>Contact Us</button>
