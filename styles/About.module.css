@@ -49,6 +49,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    
 }
 
 .sectiononeimage {
@@ -96,6 +97,8 @@
     margin-left: auto;
     margin: 3rem;
 }
+
+
 
 .sectiontwomain {
     font-family: "Roboto";
