@@ -30,15 +30,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/aboutus": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/aboutus.js"
-    ],
     "/articles": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/articles.js"
+    ],
+    "/articles/environmentalissuesonglobalscale": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/articles/environmentalissuesonglobalscale.js"
     ],
     "/wallofheroes": [
       "static/chunks/webpack.js",
