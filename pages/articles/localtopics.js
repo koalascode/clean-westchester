@@ -5,6 +5,7 @@ import Image from "next/image"
 export default function LocalTopics() {
     return (
         <div>
+            <title>Local Topics</title>
             <div className={styles.cardscontainer}>
                 <div className={styles.cardmain} id="global">
                     <Image src="/testhawaiiphoto.jpg" width={750} height={470} alt="photo of war between Russia and Ukraine" className={styles.coverimage}/>

@@ -5,6 +5,7 @@ import styles from "../../styles/ArticleTemplate.module.css"
 export default function RussianGas() {
     return (
         <div className={styles.noglobalstyles}>
+            <title>Russian Dependancy</title>
              <div className={styles.container}>
                  
                  

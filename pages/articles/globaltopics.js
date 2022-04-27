@@ -5,6 +5,7 @@ import Image from "next/image"
 export default function GlobalTopics() {
     return (
         <div className={styles.cardscontainer}>
+           <title>Global Topics</title>
             <div className={styles.cardmain} id="global">
                 <Image src="/deforestation.webp" width={750} height={470} alt="photo of us cleaning Mamaroneck and Scarsdale" className={styles.coverimage}/>
                 

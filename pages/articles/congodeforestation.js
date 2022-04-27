@@ -5,6 +5,7 @@ import styles from "../../styles/ArticleTemplate.module.css"
 export default function CongoDeforestation() {
     return (
         <div className={styles.noglobalstyles}>
+            <title>Congo Deforestation</title>
             <div className={styles.container}>    
                 <div className={styles.textcontainer}>
                     <br />

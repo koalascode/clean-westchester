@@ -11,6 +11,7 @@ import MinLightNav from '../components/minimalnavlight'
 export default function AboutUs() {
     return(
         <div className={styles.container}>
+            <title>About Us</title>
             <MinLightNav/>
             <br />
                 <div className={styles.sectionone}>

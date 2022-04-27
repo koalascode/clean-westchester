@@ -6,6 +6,7 @@ import styles from '../styles/Thanks.module.css'
 export default function Thanks() {
     return (
         <div className={styles.container}>
+            <title>Thanks!</title>
             <div className={styles.section}>
                 <h1><center>Thanks for contacting us (unless this is James, then piss off)!</center></h1>
             <Link href="/" passHref> 

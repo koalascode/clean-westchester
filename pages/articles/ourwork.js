@@ -5,6 +5,7 @@ import Image from "next/image"
 export default function OurWork() {
     return (
         <div>
+        <title>Our Work</title>
         <div className={styles.cardscontainer}>
             
             <div className={styles.cardmain} id="global">

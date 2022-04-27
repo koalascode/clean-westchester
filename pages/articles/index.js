@@ -17,6 +17,7 @@ export default function ArticleHome() {
   };
   return (
     <div className={styles.container}>
+      <title>Article</title>
       <MinLightNav />
       <br />
       <div className={styles.sectionone}>

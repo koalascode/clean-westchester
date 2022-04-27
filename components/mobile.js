@@ -18,6 +18,7 @@ export default function Mobile() {
     <div className={styles.container} >
       <Head> 
       <title>Clean Westchester</title>
+      <link rel="icon" href="./favicon.png"/>
       </Head>
       
       <header>

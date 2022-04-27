@@ -5,6 +5,7 @@ import styles from "../../styles/ArticleTemplate.module.css"
 export default function FirstCleanUp() {
     return (
         <div className={styles.noglobalstyles}>
+            <title>Clean Up One</title>
         <div className={styles.container}>    
             <div className={styles.textcontainer}>
                 <br />
