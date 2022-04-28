@@ -49,7 +49,7 @@ export default function Footer() {
                     <br />
                     <p className={styles.builtwithlovefooter}><center>Built with ❤️ by Aaron Anidjar<br /> Aaron Anidjar | Rick Yang </center></p>
                     <div className={styles.sitescontainer}>
-                     <a href="https://www.instagram.com/clean.westchester/?hl=en">
+                     <a href="https://www.instagram.com/cleanwestchester/?hl=en">
                         <Image className={styles.siteslink} src="/instagramlogo.webp" width={30} height={30} alt="Instagram logo"/>
                         </a>
                         <a href="mailto:cleanwestchester@gmail.com">
