@@ -10,8 +10,7 @@
 }
 .container {
   margin-top: -1.4rem;
-  margin-left: -0.35rem;
-  width: 101%;
+
   background-color: #0B0B0C;
   display: flex; flex-direction: column;
 }
