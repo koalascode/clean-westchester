@@ -5,7 +5,7 @@ import styles from "../../styles/ArticleTemplate.module.css"
 export default function Environmental() {
     return (
         <div className={styles.noglobalstyles}>
-            <link rel="icon" href="./favicon.png"/>
+           <title>Environmental Issues on a Global Scale</title>
         <div className={styles.container}>    
             <div className={styles.textcontainer}>
                 <br />

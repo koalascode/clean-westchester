@@ -17,6 +17,7 @@ export default function Home() {
       <Head> 
       <title>Clean Westchester</title>
       <link rel="icon" href="./favicon.png"/>
+      <meta name="description" content="Clean Westchester is an environmental organization focused on making our community cleaner and more livable for everyone." />
       </Head>
       
       <header>
