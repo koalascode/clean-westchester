@@ -362,6 +362,77 @@
 }
 
 
+.menubtn {
+  position: relative;
+  margin-top: -2rem;
+  transform: translate(-1rem, 2rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all 500ms ease;
+  
+}
+
+.menubtnburger {
+  width: 45px;
+  height: 5px;
+  background: rgb(254, 254, 254);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+  transition: all 500ms ease;
+}
+
+.menubtnburger::before,
+.menubtnburger::after {
+  content: '';
+  position: absolute;
+  width: 45px;
+  height: 5px;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+  transition: all 500ms ease; 
+}
+
+.menubtnburger::before {
+  transform: translateY(-16px);
+}
+
+.menubtnburger::after {
+  transform: translateY(16px);
+}
+
+.menubtn[class~='open'] > .menubtnburger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menubtn[class~='open'] > .menubtnburger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menubtn[class~='open'] > .menubtnburger::after {
+  transform: rotate(-45deg) translate(35px, 35px)
+}
+
+.navpop {
+  display: none;
+  text-align: center;
+  margin-top: 18rem;
+  margin-bottom: 18rem;
+  
+}
+
+.bigpagelink {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
 .wildwest {
   color: black;
   padding-top: 2rem;

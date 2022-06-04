@@ -1,24 +1,40 @@
 import { useState } from 'react'
 import Link from "next/link"
 import styles from "../styles/MinimalLightModeNav.module.css"
-
+import { useEffect } from 'react'
 export default function MinLightNav() {
     const [count, setCount] = useState()
+    const [menuStatus, setMenuStatus] = useState()
 
+    const toggleMenu = () => {
+        menuStatus === undefined ? setMenuStatus("open") : null;
+        menuStatus === "open" ? setMenuStatus("closed") : null;
+        menuStatus === "closed" ? setMenuStatus("open") : null;
+    }
+
+    useEffect(() => {
+        const menuBtn = document.getElementById("menubtn");
+        menuStatus === "open" ? menuBtn.classList.add('open') : null;
+        menuStatus !== "open" ? menuBtn.classList.remove('open') : null
+    })
+
+    useEffect(() => {
+       if (menuStatus === "open") {
+        count === undefined ? setCount("on") : null ;
+        count === "off" ? setCount("on"): null;
+       }
+       if (menuStatus === "closed") {
+        count === "on" ? setCount("off") : null;
+       }
+    })
+    
 
 
     return (
         <div className={styles.mainheader}>
-        <div className={styles.hamburgercontained} onClick={() => {
-          count === undefined ? setCount("on") : null ;
-          count === "on" ? setCount("off") : null;
-          count === "off" ? setCount("on"): null;
-
-        }}>
-          <div className={styles.scalehamburger}>
-          <span className={styles.bar} id="bartop"></span>
-          <span className={styles.bar} id="barmid"></span>
-          <span className={styles.bar} id="barbot"></span>
+        <div className={styles.hamburgercontained}>
+         <div className={styles.menubtn} id="menubtn" onClick={toggleMenu}>
+            <div className={styles.menubtnburger}></div>
           </div>
         </div>
         {count === "on" ? 
