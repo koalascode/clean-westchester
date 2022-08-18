@@ -1,179 +1,75 @@
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import styles from "../../styles/ArticleHome.module.css";
-import MinLightNav from "../../components/minimalnavlight";
-import LocalTopics from "./localtopics";
-import GlobalTopics from "./globaltopics";
-import OurWork from "./ourwork";
-import { useState } from "react";
-import LightFooter from "../../components/footerlightmode.js";
+import { useRouter } from 'next/router'
+import Head from 'next/head'
+import styles from '/styles/BlogHome.module.css'
+import Image from 'next/future/image'
+import Link from 'next/link'
+import MinLightNav from '../../components/minimalnavlight'
 
-export default function ArticleHome() {
-  const [count, setCount] = useState();
+export default function BlogHome({properties, allprops}) {
+    console.log(allprops.results.map(x => x.properties))
 
-  const noFeaturedDisplay = (e) => {
-    document.getElementById("featured").style.display = "none";
-  };
-  return (
+   return (
     <div className={styles.container}>
-      <title>Article</title>
-      <MinLightNav />
-      <br />
-      <div className={styles.sectionone}>
-        <br />
-        <h1 className={styles.header}>
-          <center>Featured Articles</center>
-        </h1>
-        <p className={styles.aboutarticles}>
-          <center>
-            As well as cleaning up Westchester, we are a resource for
-            environmental issues across the world with our newsletter and
-            articles. Here is our latest!
-          </center>
-        </p>
-      </div>
-      <div className={styles.localglobalbuttons}>
-        <button
-          className={styles.filterbutton}
-          onClick={() => setCount("local")}
-        >
-          Local Topics
-        </button>
-        <button
-          className={styles.filterbutton}
-          onClick={() => setCount("global")}
-        >
-          Global Topics
-        </button>
-        <button className={styles.filterbutton} onClick={() => setCount("us")}>
-          Our Work
-        </button>
-      </div>
-      {count === "local" ? <LocalTopics /> : null}
-      {count === "local" ? noFeaturedDisplay() : null}
-      {count === "global" ? <GlobalTopics /> : null}
-      {count === "global" ? noFeaturedDisplay() : null}
-      {count === "us" ? <OurWork /> : null}
-      {count === "us" ? noFeaturedDisplay() : null}
-      <br />
-      <br />
-      <div className={styles.cardscontainer} id="featured">
-        <div className={styles.cardmain} id="global">
-          <Image
-            src="/deforestation.webp"
-            width={750}
-            height={470}
-            alt="photo of us cleaning Mamaroneck and Scarsdale"
-            className={styles.coverimage}
-          />
-
-          <Link href="/articles/environmentalissuesonglobalscale" passHref>
-            <div className={styles.textcontainer}>
-              <p className={styles.imagecredit}>Photo by Ulet Ifansasti </p>
-              <h2>
-                <center>
-                  Environment Issues on a Global Scale: Now is the Time to Act
-                </center>
-              </h2>
-              <p className={styles.articlesummary}>
-                <center>
-                  We have 8 years to prevent the inevitable extinction of humans
-                  as a species. By 2030, if no collective international actions
-                  are taken towards halting our current global path regarding
-                  climate change, experts predict that it will be too late;
-                  rates of warming could become irreversible, and environmental
-                  repercussions could cause the human race and all biodiversity
-                  on Earth to deteriorate progressively.
-                </center>
-              </p>
-              <p>
-                <center>Written by Rick Yang</center>
-              </p>
+    <MinLightNav/>
+      <title>Scarsdale Life Sciences Society</title>
+      <link rel="icon" href="/slss.png"/>
+        
+        <div className={styles.articlescontainer}>
+        {allprops.results.map(prop => 
+         <div key={`${prop?.properties?.Name?.title[0]?.plain_text}`} className={styles.articlepreview}>
+            <div className={styles.maintext}>   
+                <Link href={`/articles/${prop?.id}`}>
+                    <div className={styles.articleteasertext}>
+                        <p className={styles.blogdate}>{prop?.properties?.DatePublished?.date?.start}</p>
+                        <h2 className={styles.blogtitle}>{prop?.properties?.Name?.title[0]?.plain_text}</h2>
+                        <p className={styles.blogdescription}>{prop?.properties?.Content?.rich_text[0]?.plain_text}</p>
+                    </div>
+                </Link>
             </div>
-          </Link>
+            <Image className={styles.coverimage} src={`${prop?.properties?.Image?.url}`} width={800} height={600} layout='raw'/>
+         
+          
+         </div> 
+      )}
+            
         </div>
-
-        <div className={styles.cardmain} id="global">
-          <Image
-            src="/congoimagecover.jpg"
-            className={styles.coverimage}
-            width={750}
-            height={470}
-            alt="photo of some environmental thing that hasn't been added to the site yet"
-          />
-          <Link href="/articles/congodeforestation" passHref>
-            <div className={styles.textcontainer}>
-              <p className={styles.imagecredit}>Photo by Matthias Vanmaercke</p>
-              <h2>
-                <center>Deforestation in the Congo</center>
-              </h2>
-              <p className={styles.articlesummary}>
-                <center>
-                  Deforestation in the Congo Is Still a Pressing Environmental
-                  Issue; How Is the World Responding?
-                </center>
-              </p>
-              <p>
-                <center>Written by Kevin Daniel</center>
-              </p>
-            </div>
-          </Link>
-        </div>
-
-        <div className={styles.cardmain} id="global">
-          <Image
-            src="/russiangascover.png"
-            width={750}
-            height={470}
-            alt="photo of war between Russia and Ukraine"
-            className={styles.coverimage}
-          />
-          <Link href="/articles/russiangasdependency" passHref>
-            <div className={styles.textcontainer}>
-              <p className={styles.imagecredit}>Photo by Andrey Rudakov</p>
-              <h2>
-                <center>The issue with Russia, Gas, and Dependancies.</center>
-              </h2>
-              <p className={styles.articlesummary}>
-                <center>
-                  The recent war between Russia and Ukraine has shed light on an
-                  issue that has long been known, the dependancies we have on
-                  gas.
-                </center>
-              </p>
-              <p>
-                <center>Written by Aaron Anidjar</center>
-              </p>
-            </div>
-          </Link>
-        </div>
-
-        <div className={styles.cardmain} id="global">
-          <Image
-            src="/rickphotocleaningone.jpg"
-            width={750}
-            height={470}
-            alt="photo of us cleaning Mamaroneck and Scarsdale"
-            className={styles.coverimage}
-          />
-
-          <Link href="/articles/cleanupone" passHref>
-            <div className={styles.textcontainer}>
-              <h2>
-                <center>Our First Clean Up!</center>
-              </h2>
-              <p className={styles.articlesummary}>
-                <center>We had our first ever clean up today!</center>
-              </p>
-              <p>
-                <center>Written by Aaron Anidjar</center>
-              </p>
-            </div>
-          </Link>
-        </div>
-      </div>
-      <LightFooter />
+        
     </div>
-  );
+   )
+}
+
+
+export async function getServerSideProps() {
+    const { Client } = require("@notionhq/client")
+
+    const notion = new Client({
+        auth: process.env.NOTION_KEY, //Check whether you have the correct token in the .env.local file.
+      })
+      
+    const databaseId = process.env.NOTION_DATABASE_ID
+    try {
+        const res = await notion.databases.query({
+          database_id: databaseId,
+          "filter": {
+            "property": 'Status', 
+            "multi_select": {
+              "contains": "Completed"
+          }
+         },
+         "sorts": [
+          {
+              "timestamp": "created_time",
+              "direction": "descending"
+          }
+      ] 
+        });
+        //This is the code snipper to get the title, it is deep inside.
+        const properties = res.results.map(x => x.properties) //Returns id
+        return {
+          props: {properties: properties, allprops: res}
+        } 
+      }
+      catch (e) {
+        console.log(e)
+      }
 }
