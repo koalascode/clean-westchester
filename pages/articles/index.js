@@ -11,8 +11,8 @@ export default function BlogHome({properties, allprops}) {
    return (
     <div className={styles.container}>
     <MinLightNav/>
-      <title>Scarsdale Life Sciences Society</title>
-      <link rel="icon" href="/slss.png"/>
+      <title>Clean Westchester</title>
+      <link rel="icon" href="/favicon.png"/>
         
         <div className={styles.articlescontainer}>
         {allprops.results.map(prop => 

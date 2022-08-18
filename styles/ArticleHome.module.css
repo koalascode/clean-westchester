@@ -3,7 +3,6 @@
 .container {
   background-color: #ffffff;
   transform: translateY(-1rem);
-  height: 110%;
   min-width: 100%;
 }
 

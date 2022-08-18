@@ -1,13 +1,13 @@
 import Head from 'next/head'
 import styles from '/styles/ArticleTemplate.module.css'
-import Image from 'next/image'
+import Image from 'next/future/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 
 
 export default function Article({ allprops, pageprops }) {
-    console.log(allprops)
+    console.log(pageprops)
 
     const items = pageprops.results.map(x => 
         <div key={`${x?.id}`}>
@@ -20,7 +20,7 @@ export default function Article({ allprops, pageprops }) {
         </ul>
         {x.type === "to_do" ? <form><input type="checkbox"/><label>{x?.to_do?.rich_text[0].plain_text}</label></form> : null}
         {x.type === "quote" ? <p className={styles.quote}>&quot;{x?.quote?.rich_text[0]?.plain_text}&quot;</p> : null} 
-        {x.type === "image" ? <div className={styles.imagediv}><img className={styles.articleimage} src={`${x.image?.file?.url}`}/></div> : null}
+        {x.type === "image" ? <div className={styles.imagediv}><Image className={styles.articleimage} src={`${x.image?.external?.url}`} width={600} height={400} layout='raw'/></div> : null}
         {x.type === "video" ? <iframe className={styles.articlevideo} src={`${x?.video?.external?.url}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> : null} 
         </div>
        
@@ -36,7 +36,7 @@ export default function Article({ allprops, pageprops }) {
             <h1 className={styles.title}>{allprops.properties.Name.title[0].plain_text}</h1>
             <div className={styles.headerinfo}>
                 <div className={styles.writer}>
-                    <Image className={styles.writeravater} src={allprops.properties.CreatedByPfp.rich_text[0].plain_text} width={60} height={20}/>
+                    <Image className={styles.writeravater} src={allprops.properties.CreatedByPfp.rich_text[0].plain_text} width={60} height={60}/>
                     <h3>{allprops.properties.CreatedBy.people[0].name}</h3>
                 </div>
                 

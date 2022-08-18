@@ -1,6 +1,5 @@
 .container {
     background-color: white;
-    height: 110vh;
 }
 .articlescontainer {
     margin-top: 5rem;
@@ -36,7 +35,7 @@
 }
 
 .blogdescription {
-   
+   font-size: 0.95rem;
 }
 
 

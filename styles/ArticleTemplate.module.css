@@ -2,7 +2,7 @@
 
 .container {
     background-color: #FFFFFF;
-    height: 110vh;
+
 }
 
 .allarticle {
@@ -22,7 +22,7 @@
 
 .writeravater {
     border-radius: 50%;
-    transform: scale(.88);
+    transform: scale(.75);
 }
 
 .publisheddate {
@@ -51,6 +51,7 @@
 
 .articleimage {
     width: 76%;
+    height: auto;
 }
 
 .returnhomebutton {
