@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.container {
+    background-color: #FFFFFF;
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    transform: translateY(-1rem);
+}
+
+.header {
+    text-decoration: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color: inherit;
+    color: black;
+}
+
+.headername {
+    font-size: 2.5rem;
+    margin-top: 1.2rem;
+    font-family: "Bebas Neue";
+    display: flex
+}
+
+
+
+@keyframes colors {
+    0% {
+        color: white;
+        font-size: 1.5rem;
+    }
+    100% {
+        color: yellow;
+        font-size: 1.75rem;
+    }
+}
+
+.sectionone {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+.sectiononeimage {
+    float: right;
+    display: flex;
+}
+
+.sectiononecontainer {
+    clear: right;
+    display: flex;
+}
+
+
+.sectiononeus {
+    font-family: "Roboto";
+    font-size: 0.9rem;
+    word-spacing: 0.08in;
+    letter-spacing: 0.01in;
+    transform: translateY(1rem);
+    padding-left: clamp(20px, 10vw, 12rem);
+}
+
+.sectiononeheader {
+    padding-left: clamp(20px, 10vw, 12rem);
+    line-height: 1.4;
+}
+
+.sectiononemain {
+    padding-left: clamp(20px, 10vw, 12rem);
+}
+
+.sectiononeheader {
+    font-size: 3rem;
+}
+
+.sectiononemain {
+    max-width: 93%;
+    font-weight: 300;
+    font-family: "Roboto";
+}
+
+.sectiononeimage {
+    border-radius: 18px;
+    display: block;
+    margin-left: auto;
+    margin: 3rem;
+}
+
+
+
+.sectiontwomain {
+    font-family: "Roboto";
+    font-size: 2.5rem;
+}
+
+.aboutussectionleft {
+    width: 100%;
+    z-index: 1;
+    transform: translateX(5rem);
+}
+
+.sectionthreeheader {
+    font-family: "Roboto";
+    font-size: 2.75rem;
+    text-align: left;
+    margin-left: 5rem;
+    display: inline-block;
+}
+
+
+.cardscontainer {
+    display: flex; flex-direction: row;
+    flex-basis: 50%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    place-items: center;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.cardscontainer:hover {
+    
+}
+
+.textcardscontained {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 6rem;
+}
+
+.cardsheader {
+    font-family: "Roboto";
+    font-weight: 500;
+    color: rgb(47, 47, 47);
+}
+
+@media (max-width: 500px) {
+    .cardsheader {
+        font-size: 1.45rem;
+        max-width: 15ch;
+        text-align: left;
+       
+    }
+    .iconphoto {
+        margin-left: -1rem;
+    }
+}
+
+.cardmaintext {
+    margin-left: 6rem;
+    margin-top: -1rem;
+    max-width: 42ch;
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: .95rem;
+}
+
+.iconphoto {
+    margin: 0;
+    padding: 0;
+    -webkit-transform:scale(0.6)
+}
+
+
+.flexcardcontained {
+    display: flex;
+    flex-wrap: wrap;
+    transition: box-shadow 500ms ease;
+}
+
+.flexcardcontained:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.sectionthree {
+    background-color: #EFF7F2;
+}
+
+.sectionheader {
+    left: 4rem;
+    position: absolute;
+    transform: translateY(-3.75rem);
+}
+
+.sectionmaintext {
+    max-width: 28%;
+    font-family: "Roboto";
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #525560;
+}
+
+.pagethree {
+    background-color: #FFFFFF;
+    
+}
+
+.smalltext {
+    font-family: "Roboto";
+    font-size: 1rem;
+font-style: normal;
+font-weight: 100;
+font-size: 1rem;
+line-height: 19px;
+/* identical to box height */
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+.largetext {
+    /* H2 */
+font-family: "Roboto";
+font-style: normal;
+font-weight: bold;
+font-size: 3rem;
+line-height: 120%;
+/* or 58px */
+text-align: center;
+
+/* Primary text */
+color: #1D2130;
+}
+
+.pagefour {
+    background-color: #EFF7F2;
+}
+
+.ourteamheader {
+    padding-top: 1rem;
+    font-family: "Bebas Neue";
+    font-size: 3.25rem;
+}
+
+.textcontainer {
+    transform: translateY(-11rem);
+    border-radius: 17px;
+    background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / .3) 20%,
+    hsl(0 0% 0% / 1)
+    );
+}
+
+
+.member {
+    transition: transform 500ms ease;
+}
+
+.member:hover {
+    transform: scale(1.05);
+}
+
+.memberimage {
+    border-radius: 18px;
+    
+  }
+  
+.memberscontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+    background-color: #EFF7F2;
+  }
+  
+.membername {
+    transform: translateY(2rem);
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+  }
+
+  .membertitle {
+      transform: translateY(-1rem);
+      color: white;
+      text-align: center;
+  }

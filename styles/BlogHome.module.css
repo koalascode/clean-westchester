@@ -1,0 +1,53 @@
+.container {
+    background-color: white;
+}
+.articlescontainer {
+    margin-top: 5rem;
+}
+
+.articlepreview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.maintext {
+    width: 40%;
+    cursor: pointer
+}
+
+.coverimage {
+    width: 50%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.blogdate {
+    font-size: 1rem;
+    font-family: "Inter";
+    font-weight: 300;
+}
+
+.blogtitle {
+    font-size: 4rem;
+    margin-top: 0;
+}
+
+.blogdescription {
+   font-size: 0.95rem;
+}
+
+
+@media (max-width: 500px) {
+    .articlepreview {
+        justify-content: center !important;
+    }
+    .coverimage {
+        width: 80%;
+    }
+    .maintext {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}

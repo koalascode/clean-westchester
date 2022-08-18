@@ -1,0 +1,141 @@
+.mainlinkscontainer {
+    padding-top: 5rem;
+    padding-bottom: 3.4rem;
+  }
+  
+  .sitelinks {
+    color: black;
+    text-align: center;
+    font-family: "Bebas Neue", "Rubik";
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 0;
+  
+    transition: color 500ms ease;
+  }
+  
+  .sitelinks:hover{
+    color: #377fe3;
+  }
+  
+  .hamburgerbutton {
+    z-index: 99;
+   
+  }
+  
+  .bar {
+    display: block;
+    height: 3px;
+    width: 30px;
+    margin: 0.3rem;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: background-color 500ms ease;
+  }
+
+  .scalehamburger {
+    transition: scale 500ms ease, transform 500ms ease;
+    position: fixed;
+    border-radius: 15px;
+  }
+  
+  .scalehamburger:hover{
+    transform: scale(1.15);
+  }
+  
+  .hamburgercontained {
+    transform: translateY(2rem); 
+    margin-left: 85%;
+    margin-right: 10rem;
+    cursor: pointer;
+  }
+
+  .hamburgercontained:hover {
+    width: 10rem; 
+  }
+  
+  .mainlinkscontainer{animation: 1s ease-in 0s FadeIn;}
+  @keyframes FadeIn {
+      0% {
+        opacity:0;
+      }
+      100% {
+        opacity:1;
+      }
+  }
+  
+
+
+
+
+
+.menubtn {
+  position: relative;
+  margin-top: -2rem;
+  transform: translate(-1rem, 2rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all 500ms ease;
+  
+}
+
+.menubtnburger {
+  width: 45px;
+  height: 5px;
+  background: black;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+  transition: all 500ms ease;
+}
+
+.menubtnburger::before,
+.menubtnburger::after {
+  content: '';
+  position: absolute;
+  width: 45px;
+  height: 5px;
+  background: black;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+  transition: all 500ms ease; 
+}
+
+.menubtnburger::before {
+  transform: translateY(-16px);
+}
+
+.menubtnburger::after {
+  transform: translateY(16px);
+}
+
+.menubtn[class~='open'] > .menubtnburger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menubtn[class~='open'] > .menubtnburger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menubtn[class~='open'] > .menubtnburger::after {
+  transform: rotate(-45deg) translate(35px, 35px)
+}
+
+.navpop {
+  display: none;
+  text-align: center;
+  margin-top: 18rem;
+  margin-bottom: 18rem;
+  
+}
+
+.bigpagelink {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
