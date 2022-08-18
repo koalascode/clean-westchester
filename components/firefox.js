@@ -14,7 +14,6 @@ import Countdown from './countdown.js'
 export default function FirefoxHome() {
   const [count, setCount] = useState()
   return (
-
     <div className={styles.container} >
       <Head> 
       <title>Clean Westchester</title>
