@@ -34,7 +34,7 @@ export default function FirefoxHome() {
 
       <br />
       {
-        new Date().getHours().toString() > 21 ? <div className={styles.globecontainer}><NightGlobe className={styles.globe}/></div> : <div className={styles.globecontainer}><Globe className={styles.globe}/></div>
+        new Date().getHours().toString() > 21 || new Date().getHours().toString() <= 5 ? <div className={styles.globecontainer}><NightGlobe className={styles.globe}/></div> : <div className={styles.globecontainer}><Globe className={styles.globe}/></div>
       }
         
         <h3 className={styles.frontheader}>The world, as we know it, is endangered</h3>
