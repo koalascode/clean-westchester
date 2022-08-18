@@ -13,7 +13,7 @@
 }
 
 .maintext {
-    width: 40%;
+    max-width: 40%;
     cursor: pointer
 }
 
@@ -30,7 +30,7 @@
 }
 
 .blogtitle {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: 0;
 }
 
@@ -39,7 +39,7 @@
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     .articlepreview {
         justify-content: center !important;
     }
