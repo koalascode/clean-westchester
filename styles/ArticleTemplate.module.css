@@ -59,6 +59,11 @@
     margin-left: 1rem;
     border: none;
     background: none;
+    cursor: pointer;
+}
+
+.returnhomebutton:hover {
+    text-decoration: underline;
 }
 
 .paragraph {
