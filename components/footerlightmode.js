@@ -43,7 +43,7 @@ export default function Footer() {
     return (
         <div className={styles.container}>
             <div className={styles.footerflexbot}>
-                <div classname={styles.footsectionone}>
+                <div classnName={styles.footsectionone}>
                     <h1 className={styles.foothead}><center>Clean Westchester</center></h1>
                     <p className={styles.footmain}><center>Clean Westchester is a student founded and run organization that focuses on making Westchester a cleaner place for everyone. We are always looking for opportunities to expand and to teach in classes, so please reach out!</center></p>
                     <br />
@@ -95,8 +95,8 @@ export default function Footer() {
                     </form>
                     <dialog className={styles.thanks} id="thanks">
                             <button  onClick={closeModal} id="modalclosingbutton" className={styles.modalclosingbutton}>X</button>
-                            <h2 classname={styles.modalhead}><b>Thanks for Sending Us a Message</b></h2>
-                            <p classname={styles.modalmain}>We'll Get Back to You As Soon as Possibe!</p>
+                            <h2 className={styles.modalhead}><b>Thanks for Sending Us a Message</b></h2>
+                            <p className={styles.modalmain}>We&apos;ll Get Back to You As Soon as Possibe!</p>
                         </dialog>
                 </div>
             </div>
