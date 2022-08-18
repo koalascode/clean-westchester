@@ -1,16 +1,6 @@
 {
   "/_app": "pages/_app.js",
-  "/aboutus": "pages/aboutus.html",
-  "/api/hello": "pages/api/hello.js",
   "/_error": "pages/_error.js",
-  "/contactus": "pages/contactus.html",
-  "/home": "pages/home.html",
-  "/thanksforsubmitting": "pages/thanksforsubmitting.html",
-  "/scarsdale": "pages/scarsdale.html",
-  "/": "pages/index.html",
-  "/wallofheroes": "pages/wallofheroes.html",
-  "/articles": "pages/articles.js",
-  "/articles/[page]": "pages/articles/[page].js",
   "/_document": "pages/_document.js",
-  "/404": "pages/404.html"
+  "/": "pages/index.js"
 }
