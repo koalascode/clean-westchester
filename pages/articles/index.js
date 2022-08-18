@@ -58,7 +58,7 @@ export async function getServerSideProps() {
          },
          "sorts": [
           {
-              "timestamp": "created_time",
+              "property": "DatePublished",
               "direction": "descending"
           }
       ] 
