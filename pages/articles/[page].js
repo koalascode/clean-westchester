@@ -7,14 +7,14 @@ import { useState } from 'react'
 
 
 export default function Article({ allprops, pageprops }) {
-    console.log(allprops)
+    
 
     const items = pageprops.results.map(x => 
         <div key={`${x?.id}`}>
         {x.type === "heading_1" ? <h1 className={styles.h1}>{x.heading_1?.rich_text[0]?.plain_text}</h1> : null}
         {x.type === "heading_2" ? <h2 className={styles.h2}>{x.heading_2?.rich_text[0]?.plain_text}</h2> : null}
         {x.type === "heading_3" ? <h3 className={styles.h3}>{x.heading_3?.rich_text[0]?.plain_text}</h3> : null}
-        {x.type === "paragraph" ? <p className={styles.paragraph}>{x.paragraph?.rich_text[0]?.plain_text}</p> : null}
+        {x.type === "paragraph" ? <p className={styles.paragraph}>{x.paragraph?.rich_text?.map(w => w.plain_text)}</p> : null}
         <ul>
         {x.type === "bulleted_list_item" ? <li>{x?.bulleted_list_item?.rich_text[0]?.plain_text}</li> : null}
         </ul>

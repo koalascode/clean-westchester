@@ -18,7 +18,7 @@
 }
 
 .coverimage {
-    width: 50%;
+    max-width: 45%;
     height: auto;
     border-radius: 15px;
 }
@@ -39,12 +39,12 @@
 }
 
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
     .articlepreview {
         justify-content: center !important;
     }
     .coverimage {
-        width: 80%;
+        max-width: 80%;
     }
     .maintext {
         max-width: 80%;
