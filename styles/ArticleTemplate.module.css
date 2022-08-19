@@ -78,6 +78,8 @@
     display: block;
     margin: 0 auto;
     padding-bottom: 2rem;
+    max-width: 90%;
+    max-height: auto
 }
 
 @media (max-width: 500px) {
