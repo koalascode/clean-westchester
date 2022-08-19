@@ -21,7 +21,7 @@ export default function Article({ allprops, pageprops }) {
         {x.type === "to_do" ? <form><input type="checkbox"/><label>{x?.to_do?.rich_text[0].plain_text}</label></form> : null}
         {x.type === "quote" ? <p className={styles.quote}>&quot;{x?.quote?.rich_text[0]?.plain_text}&quot;</p> : null} 
         {x.type === "image" ? <div className={styles.imagediv}><Image className={styles.articleimage} src={`${x.image?.external?.url}`} width={600} height={400} layout='raw'/></div> : null}
-        {x.type === "video" ? <iframe className={styles.articlevideo} width={560} height={315} src={x?.video?.external?.url.toString().replace(".be/", ".be/embed/").replace(".", "").replace("://", "://www.").replace("youtube", "youtube.com")} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> : null} 
+        {x.type === "video" ? <iframe className={styles.articlevideo} width={560} height={315} src={x?.video?.external?.url.toString().replace(".be/", ".be/embed/").replace("://youtu.be/", "://www.youtube.com/")} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> : null} 
         </div>
        
     )
