@@ -7,7 +7,7 @@ import { useState } from 'react'
 
 
 export default function Article({ allprops, pageprops }) {
-    console.log(pageprops.results.map(x => x?.video?.external?.url).toString().replace(".be/", ".be/embed/").replace(".", "").replace("://", "://www."))
+    console.log(pageprops.results)
 
     const items = pageprops.results.map(x => 
         <div key={`${x?.id}`}>
