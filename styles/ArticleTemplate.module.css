@@ -73,6 +73,12 @@
     font-weight: 300;
 }
 
+.articlevideo {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
 @media (max-width: 500px) {
     .articlemain {
         max-width: 90%;
