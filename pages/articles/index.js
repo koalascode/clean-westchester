@@ -21,6 +21,11 @@ export default function BlogHome({properties, allprops}) {
                 <Link href={`/articles/${prop?.id}`}>
                     <div className={styles.articleteasertext}>
                         <p className={styles.blogdate}>{prop?.properties?.DatePublished?.date?.start}</p>
+                      {prop?.properties?.CreatedBy.people.map(x => 
+                        <div key={x.name} className={styles.writer}>
+                          <Image className={styles.writeravater} src={x.avatar_url} width={60} height={60}/>
+                          <h3 key={x.name}>{x.name}</h3>
+                        </div>)}
                         <h2 className={styles.blogtitle}>{prop?.properties?.Name?.title[0]?.plain_text}</h2>
                         <p className={styles.blogdescription}>{prop?.properties?.Content?.rich_text[0]?.plain_text}</p>
                     </div>

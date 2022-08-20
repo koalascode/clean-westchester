@@ -29,6 +29,17 @@
     font-weight: 300;
 }
 
+.writer {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.writeravater {
+    border-radius: 50%;
+    transform: scale(.75);
+}
+
 .blogtitle {
     font-size: 3rem;
     margin-top: 0;
