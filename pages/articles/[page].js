@@ -7,7 +7,7 @@ import { useState } from 'react'
 
 
 export default function Article({ allprops, pageprops }) {
-    console.log(allprops.properties.CreatedBy.people.avatar_url)
+    console.log(allprops.properties.EditedBy.people.name)
     const items = pageprops.results.map(x => 
         <div key={`${x?.id}`}>
         {x.type === "heading_1" ? <h1 className={styles.h1}>{x.heading_1?.rich_text[0]?.plain_text}</h1> : null}
@@ -40,16 +40,17 @@ export default function Article({ allprops, pageprops }) {
                 {allprops.properties.CreatedBy.people.map(x =>
                 <div className={styles.writer} key={x.name}>
                     <Image className={styles.writeravater} src={x.avatar_url} width={60} height={60}/>
-                    <h3 key={x.name}>{x.name}</h3>
+                    <h3 key={x.name}>{x.name}, Clean Westchester</h3>
                 </div>)}
                     
-                    
-                <div className={styles.editorsmain}>
-                    <p className={styles.editorhead}>Edited By:</p>
+            {allprops.properties.EditedBy.people.name ?   
+                <div className={styles.editorsmain}>   
+                    <p className={styles.editorhead}></p>
                     <div className={styles.editors}>
-                        {allprops.properties.EditedBy.people.map(x => <div key={x.name} className={styles.editorflex}><Image className={styles.editoravatar} src={x.avatar_url} width={60} height={60}/><p className={styles.editorsname}>{x.name}</p></div>)}
+                        {allprops.properties.EditedBy.people.map(x => <div key={x.name} className={styles.editorflex}><Image className={styles.editoravatar} src={x.avatar_url} width={60} height={60}/><p className={styles.editorsname}>{x.name}, Clean Westchester</p></div>)}
                     </div>
                 </div>
+        : null}  
                 
                 
                 <p className={styles.publisheddate}>{allprops.properties.DatePublished.date.start}</p>
