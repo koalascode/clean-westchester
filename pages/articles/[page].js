@@ -7,12 +7,13 @@ import { useState } from 'react'
 
 
 export default function Article({ allprops, pageprops }) {
+    console.log(pageprops.results)
     const items = pageprops.results.map(x => 
         <div key={`${x?.id}`}>
         {x.type === "heading_1" ? <h1 className={styles.h1}>{x.heading_1?.rich_text[0]?.plain_text}</h1> : null}
         {x.type === "heading_2" ? <h2 className={styles.h2}>{x.heading_2?.rich_text[0]?.plain_text}</h2> : null}
         {x.type === "heading_3" ? <h3 className={styles.h3}>{x.heading_3?.rich_text[0]?.plain_text}</h3> : null}
-        {x.type === "paragraph" ? <p className={styles.paragraph}>{x.paragraph?.rich_text?.map(w => w.plain_text)}</p> : null}
+        {x.type === "paragraph" ? <div className={styles.paragraph}>{x.paragraph?.rich_text?.map(w => w.href !== null ? w.annotations.bold === true ? w.annotations.italic === true ? <Link href={w.href} passHref><i><b className={styles.hypertextp}>{w.plain_text}</b></i></Link> : <Link href={w.href} passHref><b className={styles.hypertextp}>{w.plain_text}</b></Link> : w.annotations.italics === true ? <Link href={w.href} passHref><i className={styles.hypertextp}>{w.plain_text}</i></Link> : <Link className={styles.hypertextp} href={w.href} passHref>{w.plain_text}</Link> : w.plain_text)}</div> : null}
         <ul>
         {x.type === "bulleted_list_item" ? <li>{x?.bulleted_list_item?.rich_text[0]?.plain_text}</li> : null}
         </ul>
@@ -44,7 +45,7 @@ export default function Article({ allprops, pageprops }) {
                     
             {typeof(allprops.properties.EditedBy.people[0]) !== undefined ?   
                 <div className={styles.editorsmain}>   
-                    <p className={styles.editorhead}></p>
+                    <p className={styles.editorhead}>Edited By: </p>
                     <div className={styles.editors}>
                         {allprops.properties.EditedBy.people.map(x => <div key={x.name} className={styles.editorflex}><Image className={styles.editoravatar} src={x.avatar_url} width={60} height={60}/><p className={styles.editorsname}>{x.name}, Clean Westchester</p></div>)}
                     </div>

@@ -93,6 +93,15 @@
     text-decoration: underline;
 }
 
+.hypertextp {
+    color: rgb(7, 73, 255);
+    cursor: pointer;
+}
+
+.hypertextp:hover {
+    text-decoration: underline;
+}
+
 .paragraph {
     line-height: 2rem;
     text-indent: 3rem;
