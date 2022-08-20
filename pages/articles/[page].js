@@ -47,7 +47,7 @@ export default function Article({ allprops, pageprops }) {
                 <div className={styles.editorsmain}>
                     <p className={styles.editorhead}>Edited By:</p>
                     <div className={styles.editors}>
-                        {allprops.properties.EditedBy.people.map(x => <div className={styles.editorflex}><Image className={styles.writeravater} src={x.avatar_url} width={60} height={60}/><p className={styles.editorsname}>{x.name}</p></div>)}
+                        {allprops.properties.EditedBy.people.map(x => <div key={x.name} className={styles.editorflex}><Image className={styles.writeravater} src={x.avatar_url} width={60} height={60}/><p className={styles.editorsname}>{x.name}</p></div>)}
                     </div>
                 </div>
                 
