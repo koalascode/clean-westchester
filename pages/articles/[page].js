@@ -7,6 +7,7 @@ import { useState } from 'react'
 
 
 export default function Article({ allprops, pageprops }) {
+    console.log(pageprops)
     const items = pageprops.results.map(x => 
         <div key={`${x?.id}`}>
         {x.type === "heading_1" ? <h1 className={styles.h1}>{x.heading_1?.rich_text[0]?.plain_text}</h1> : null}
