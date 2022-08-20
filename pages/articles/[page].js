@@ -26,8 +26,10 @@ export default function Article({ allprops, pageprops }) {
     )
     return (
         <div className={styles.container}>
-            <title>{allprops.properties.Name.title[0].plain_text}</title>
-            <link rel="icon" href="/blogicon.png"/>
+            <Head>
+                <title>{allprops.properties.Name.title[0].plain_text}</title>
+                <link rel="icon" href="/blogicon.png"/>
+            </Head>
             <Link href="/articles" passHref>
                 <button className={styles.returnhomebutton}>⬅️ Blog Home</button>
             </Link>
