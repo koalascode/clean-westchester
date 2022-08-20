@@ -7,7 +7,6 @@ import { useState } from 'react'
 
 
 export default function Article({ allprops, pageprops }) {
-    console.log(allprops.properties.EditedBy.people.name)
     const items = pageprops.results.map(x => 
         <div key={`${x?.id}`}>
         {x.type === "heading_1" ? <h1 className={styles.h1}>{x.heading_1?.rich_text[0]?.plain_text}</h1> : null}
@@ -43,7 +42,7 @@ export default function Article({ allprops, pageprops }) {
                     <h3 key={x.name}>{x.name}, Clean Westchester</h3>
                 </div>)}
                     
-            {allprops.properties.EditedBy.people.name ?   
+            {typeof(allprops.properties.EditedBy.people[0]) !== undefined ?   
                 <div className={styles.editorsmain}>   
                     <p className={styles.editorhead}></p>
                     <div className={styles.editors}>
