@@ -24,6 +24,7 @@
 .writeravater {
     border-radius: 50%;
     transform: scale(.75);
+    -ms-transform: scale(.75);
 }
 
 .editors {
@@ -43,6 +44,12 @@
 .editorflex {
     display: flex;
     justify-content: center;
+}
+
+.editoravatar {
+    border-radius: 50%;
+    transform: scale(.65);
+    -ms-transform: scale(.65);
 }
 
 .publisheddate {
