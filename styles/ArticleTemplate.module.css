@@ -26,6 +26,25 @@
     transform: scale(.75);
 }
 
+.editors {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.editorhead, .editorsname{
+    transform: translateY(.5rem);
+}
+
+.editorhead {
+    text-align: center;
+}
+
+.editorflex {
+    display: flex;
+    justify-content: center;
+}
+
 .publisheddate {
     text-align: center;
     font-family: "Inter"
