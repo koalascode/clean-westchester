@@ -7,7 +7,7 @@ import { useState } from 'react'
 
 
 export default function Article({ allprops, pageprops }) {
-    console.log(pageprops)
+    console.log(pageprops.results.map(x => x?.image?.file?.url))
     const items = pageprops.results.map(x => 
         <div key={`${x?.id}`}>
         {x.type === "heading_1" ? <h1 className={styles.h1}>{x.heading_1?.rich_text[0]?.plain_text}</h1> : null}
@@ -19,7 +19,7 @@ export default function Article({ allprops, pageprops }) {
         </ul>
         {x.type === "to_do" ? <form><input type="checkbox"/><label>{x?.to_do?.rich_text[0].plain_text}</label></form> : null}
         {x.type === "quote" ? <p className={styles.quote}>&quot;{x?.quote?.rich_text[0]?.plain_text}&quot;</p> : null} 
-        {x.type === "image" ? <div className={styles.imagediv}><Image className={styles.articleimage} src={`${x.image?.external?.url}`} width={600} height={400} layout='raw'/></div> : null}
+        {x.type === "image" ? <div className={styles.imagediv}><Image className={styles.articleimage} src={x.image?.external?.url == undefined ? x?.image?.file?.url.toString() : x?.image?.external?.url.toString()} width={600} height={400} layout='raw'/></div> : null}
         {x.type === "video" ? <iframe className={styles.articlevideo} width={560} height={315} layout='raw' src={x?.video?.external?.url.toString().replace(".be/", ".be/embed/").replace("://youtu.be/", "://www.youtube.com/")} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> : null} 
         </div>
        
