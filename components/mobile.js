@@ -49,7 +49,7 @@ export default function Mobile() {
      <div className={styles.sectiontwo} id="sectiontwo"> 
      <br />
       <article>
-        <p className={styles.sectiontwotext}>We at Clean Westchester are taking action, not with theoreticals, cheap talk, or meaningless fundraisers, but with actual boots on the ground action.</p>
+        <p className={styles.sectiontwotext}>We at Clean Westchester are taking action, not with theoreticals, cheap talk, or meaningless fundraisers, but with actual boots on the ground action and unbiased research.</p>
       </article>
       <br /><br />
      </div>
