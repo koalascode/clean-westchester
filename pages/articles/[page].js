@@ -38,7 +38,7 @@ export default function Article({ allprops, pageprops }) {
             <div className={styles.headerinfo}>
                 
                 {allprops.properties.CreatedBy.people.map(x =>
-                <div className={styles.writer}>
+                <div className={styles.writer} key={x.name}>
                     <Image className={styles.writeravater} src={x.avatar_url} width={60} height={60}/>
                     <h3 key={x.name}>{x.name}</h3>
                 </div>)}
