@@ -8,7 +8,7 @@ import NavBar from '../../components/minimalnavlight'
 
 
 export default function Article({ allprops, pageprops }) {
-    console.log(pageprops.results)
+    console.log(allprops.properties)
     const items = pageprops.results.map(x => 
         <div key={`${x?.id}`} className={styles.items}>
         {x.type === "heading_1" ? <h1 className={styles.h1}>{x.heading_1?.rich_text[0]?.plain_text}</h1> : null}
@@ -35,27 +35,32 @@ export default function Article({ allprops, pageprops }) {
                 <button className={styles.returnhomebutton}>⬅️ Blog Home</button>
             </Link>
             <div className={styles.allarticle}>
-            <h1 className={styles.title}>{allprops.properties.Name.title[0].plain_text}</h1>
-            <div className={styles.headerinfo}>
-                
+            <div className={styles.header}>
+                <p className={styles.indicatorhead}><b className={styles.accenttext}>Clean Westchester</b> | Environment</p>
+                <h1 className={styles.title}>{allprops.properties.Name.title[0].plain_text}</h1>
                 {allprops.properties.CreatedBy.people.map(x =>
-                <div className={styles.writer} key={x.name}>
-                    <Image className={styles.writeravater} src={x.avatar_url} width={60} height={60}/>
-                    <h3 key={x.name}>{x.name}, Clean Westchester</h3>
-                </div>)}
-                    
-            {typeof(allprops.properties.EditedBy.people[0]) !== undefined ?   
-                <div className={styles.editorsmain}>   
-                    <p className={styles.editorhead}>Edited By: </p>
-                    <div className={styles.editors}>
-                        {allprops.properties.EditedBy.people.map(x => <div key={x.name} className={styles.editorflex}><Image className={styles.editoravatar} src={x.avatar_url} width={60} height={60}/><p className={styles.editorsname}>{x.name}, Clean Westchester</p></div>)}
-                    </div>
-                </div>
-        : null}  
-                
-                
+                    <div className={styles.writer} key={x.name}>
+                        <Image className={styles.writeravater} src={x.avatar_url} width={60} height={60}/>
+                        <h3 key={x.name}>{x.name}, Clean Westchester</h3>
+                    </div>)}
+                <Image className={styles.coverimage} src={allprops.properties.Image.url} width={800} height={600} layout='raw'/>
                 <p className={styles.publisheddate}>{allprops.properties.DatePublished.date.start}</p>
+                <div className={styles.headerinfo}>
+           {typeof(allprops.properties.EditedBy.people[0]) !== undefined ?   
+                    <div className={styles.editorsmain}>   
+                        <p className={styles.editorhead}>Edited By: </p>
+                        <div className={styles.editors}>
+                            {allprops.properties.EditedBy.people.map(x => <div key={x.name} className={styles.editorflex}><Image className={styles.editoravatar} src={x.avatar_url} width={60} height={60}/><p className={styles.editorsname}>{x.name}, Clean Westchester</p></div>)}
+                        </div>
+                    </div>
+            : null}  
+                    
+                    
+                    
+                </div>
             </div>
+            
+           
             <div className={styles.articlemain}>
            {items}
             </div>
