@@ -1,6 +1,7 @@
 .container {
     background-color: white;
 }
+
 .articlescontainer {
     margin-top: 5rem;
     display: grid;
@@ -67,6 +68,9 @@
 
 
 @media (max-width: 600px) {
+    .articlescontainer {
+        grid-template-columns: 100%;
+    }
     .articlepreview {
         justify-content: center !important;
         grid-template-columns: 90%;
@@ -77,5 +81,8 @@
     .maintext {
         max-width: 80%;
         margin: 0 auto;
+    }
+    .mainarticles {
+        border-right: none;
     }
 }
