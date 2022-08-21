@@ -46,14 +46,6 @@ export default function Article({ allprops, pageprops }) {
                 <Image className={styles.coverimage} src={allprops.properties.Image.url} width={800} height={600} layout='raw'/>
                 <p className={styles.publisheddate}>{allprops.properties.DatePublished.date.start}</p>
                 <div className={styles.headerinfo}>
-           {typeof(allprops.properties.EditedBy.people[0]) !== undefined ?   
-                    <div className={styles.editorsmain}>   
-                        <p className={styles.editorhead}>Edited By: </p>
-                        <div className={styles.editors}>
-                            {allprops.properties.EditedBy.people.map(x => <div key={x.name} className={styles.editorflex}><Image className={styles.editoravatar} src={x.avatar_url} width={60} height={60}/><p className={styles.editorsname}>{x.name}, Clean Westchester</p></div>)}
-                        </div>
-                    </div>
-            : null}  
                     
                     
                     
@@ -63,7 +55,16 @@ export default function Article({ allprops, pageprops }) {
            
             <div className={styles.articlemain}>
            {items}
+           {typeof(allprops.properties.EditedBy.people[0]) !== undefined ?   
+                    <div className={styles.editorsmain}>   
+                        <p className={styles.editorhead}>Edited By: </p>
+                        <div className={styles.editors}>
+                            {allprops.properties.EditedBy.people.map(x => <div key={x.name} className={styles.editorflex}><Image className={styles.editoravatar} src={x.avatar_url} width={60} height={60}/><p className={styles.editorsname}>{x.name}, Clean Westchester</p></div>)}
+                        </div>
+                    </div>
+            : null}  
             </div>
+           
             </div>
           
             
