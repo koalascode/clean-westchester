@@ -104,9 +104,9 @@
 
 .paragraph {
     line-height: 2rem;
-    text-indent: 3rem;
     font-family: "Inter";
     font-weight: 300;
+    font-size: 1rem;
 }
 
 .articlevideo {
