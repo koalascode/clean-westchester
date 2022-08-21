@@ -3,11 +3,25 @@
 }
 .articlescontainer {
     margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.mainarticles {
+    border-right: 1px solid rgb(45, 45, 45);
 }
 
 .articlepreview {
     display: grid;
     grid-template-columns: 45% 45%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.sidearticlepreview {
+    display: grid;
+    grid-template-columns: 90%;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 2rem;

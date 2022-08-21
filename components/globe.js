@@ -8,11 +8,15 @@ class Globe extends Component {
     componentDidMount() {
         //Setup:
         const scene = new THREE.Scene();
+
+        
         const camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.1, 1000);
 
         const renderer = new THREE.WebGLRenderer({
             canvas: document.querySelector('#bg'),
           });
+        
+        //renderer.setClearColor( 0xffffff, .6);
 
         renderer.setPixelRatio(window.devicePixelRatio);
         renderer.setSize(window.innerWidth, window.innerHeight);
@@ -21,7 +25,7 @@ class Globe extends Component {
 
         //Sphere: 
         const nasaTexture = new THREE.TextureLoader().load('/promisingworldmap.jpg')
-    
+        
 
         const geometry = new THREE.SphereBufferGeometry( 13, 32, 32 )
         const material = new THREE.MeshPhongMaterial({ 
@@ -29,6 +33,8 @@ class Globe extends Component {
         });
         const globe = new THREE.Mesh( geometry, material );
         scene.add( globe );
+
+        
 
 
         //Lights:
