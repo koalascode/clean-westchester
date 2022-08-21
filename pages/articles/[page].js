@@ -8,7 +8,7 @@ import NavBar from '../../components/minimalnavlight'
 
 
 export default function Article({ allprops, pageprops }) {
-    console.log(allprops.properties)
+    console.log(typeof(allprops.properties.EditedBy.people[0]))
     const items = pageprops.results.map(x => 
         <div key={`${x?.id}`} className={styles.items}>
         {x.type === "heading_1" ? <h1 className={styles.h1}>{x.heading_1?.rich_text[0]?.plain_text}</h1> : null}
@@ -55,7 +55,7 @@ export default function Article({ allprops, pageprops }) {
            
             <div className={styles.articlemain}>
            {items}
-           {typeof(allprops.properties.EditedBy.people[0]) !== undefined ?   
+           {typeof(allprops.properties.EditedBy.people[0]) !== "undefined" ?   
                     <div className={styles.editorsmain}>   
                         <p className={styles.editorhead}>Edited By: </p>
                         <div className={styles.editors}>

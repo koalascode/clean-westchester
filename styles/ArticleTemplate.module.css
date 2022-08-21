@@ -94,7 +94,7 @@
 .articlemain {
     max-width: 50%;
     margin: 0 auto;
-    
+    initial-letter: 2;
 }
 
 .imagediv {
