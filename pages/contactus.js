@@ -48,6 +48,7 @@ export default function Contact() {
   return (
     <div className={styles.contactcontainer}>
      <title>Contact Us</title>
+     <br />
       <MinLightNav />
       <div className={styles.secondcontainer}>
         <br />

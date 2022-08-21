@@ -12,6 +12,7 @@ export default function AboutUs() {
     return(
         <div className={styles.container}>
             <title>About Us</title>
+            <br />
             <MinLightNav/>
             <br />
                 <div className={styles.sectionone}>
