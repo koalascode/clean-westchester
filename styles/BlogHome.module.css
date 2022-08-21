@@ -67,6 +67,11 @@
     font-family: "Inter"
 }
 
+.blogtitle:hover {
+    color: rgb(42, 83, 247);
+    text-decoration: underline;
+}
+
 .blogdescription {
    font-size: 0.95rem;
 }

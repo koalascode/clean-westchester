@@ -4,12 +4,13 @@ import Image from 'next/future/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
+import NavBar from '../../components/minimalnavlight'
 
 
 export default function Article({ allprops, pageprops }) {
     console.log(pageprops.results)
     const items = pageprops.results.map(x => 
-        <div key={`${x?.id}`}>
+        <div key={`${x?.id}`} className={styles.items}>
         {x.type === "heading_1" ? <h1 className={styles.h1}>{x.heading_1?.rich_text[0]?.plain_text}</h1> : null}
         {x.type === "heading_2" ? <h2 className={styles.h2}>{x.heading_2?.rich_text[0]?.plain_text}</h2> : null}
         {x.type === "heading_3" ? <h3 className={styles.h3}>{x.heading_3?.rich_text[0]?.plain_text}</h3> : null}
