@@ -47,7 +47,7 @@ export default function Footer() {
                     <h1 className={styles.foothead}><center>Clean Westchester</center></h1>
                     <p className={styles.footmain}><center>Clean Westchester is a student founded and run organization that focuses on making Westchester a cleaner place for everyone. We are always looking for opportunities to expand and to teach in classes, so please reach out!</center></p>
                     <br />
-                    <p className={styles.builtwithlovefooter}><center>Built with ❤️ by Aaron Anidjar<br /> Aaron Anidjar | Rick Yang </center></p>
+                    <p className={styles.builtwithlovefooter}><center>Built with ❤️ by Aaron Anidjar</center></p>
                     <div className={styles.sitescontainer}>
                      <a href="https://www.instagram.com/cleanwestchester/?hl=en">
                         <Image className={styles.siteslink} src="/instagramlogo.webp" width={30} height={30} alt="Instagram logo"/>

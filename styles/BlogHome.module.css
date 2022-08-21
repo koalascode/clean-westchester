@@ -6,19 +6,20 @@
 }
 
 .articlepreview {
-    display: flex;
+    display: grid;
+    grid-template-columns: 45% 45%;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 2rem;
 }
 
 .maintext {
-    max-width: 40%;
+    max-width: 100%;
     cursor: pointer
 }
 
 .coverimage {
-    max-width: 45%;
+    max-width: 100%;
     height: auto;
     border-radius: 15px;
 }
@@ -53,6 +54,7 @@
 @media (max-width: 600px) {
     .articlepreview {
         justify-content: center !important;
+        grid-template-columns: 90%;
     }
     .coverimage {
         max-width: 80%;
