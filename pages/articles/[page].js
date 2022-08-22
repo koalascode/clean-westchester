@@ -29,11 +29,11 @@ export default function Article({ allprops, pageprops }) {
         <div className={styles.container}>
             <Head>
                 <title>{allprops.properties.Name.title[0].plain_text}</title>
-                <link rel="icon" href="/turtlepolaroidsimple.png"/>
+                <link rel="icon" href="/greencwlogo.png"/>
             </Head>
             <Link href="/articles" passHref>
                 <div className={styles.cwlogocontainer}>
-                <Image src="/cwturtlelogo2.png" className={styles.cwlogo} width={100} height={100} layout='raw'/>
+                <Image src="/greencwlogo.png" className={styles.cwlogo} width={100} height={100} layout='raw'/>
                 <p className={styles.bloghometxt}>← Blog Home</p>
                 </div>
             </Link>

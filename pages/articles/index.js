@@ -13,7 +13,7 @@ export default function BlogHome({properties, allprops, rightSideProps}) {
     <MinLightNav/>
     <Head> 
       <title>Clean Westchester</title>
-      <link rel="icon" href="/turtlepolaroidsimple.png"/>
+      <link rel="icon" href="/greencwlogo.png"/>
       <meta name="description" content="Clean Westchester articles are unbiased and always well researched. Clean Westchester articles are not tied to a certain ideology, but instead try to persue the truth, no matter the outcome." />
     </Head>
         

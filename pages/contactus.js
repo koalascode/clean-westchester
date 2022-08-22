@@ -47,7 +47,11 @@ export default function Contact() {
   //console.log(properties)
   return (
     <div className={styles.contactcontainer}>
-     <title>Contact Us</title>
+     <Head> 
+      <title>Clean Westchester | Contact Us</title>
+      <link rel="icon" href="/greencwlogo.png"/>
+      <meta name="description" content="Clean Westchester is an environmental organization focused on making our community cleaner and more livable for everyone." />
+      </Head>
      <br />
       <MinLightNav />
       <div className={styles.secondcontainer}>
