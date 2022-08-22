@@ -6,10 +6,23 @@
 
 }
 
+.cwlogocontainer {
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+    cursor: pointer;
+}
 
+.cwlogocontainer:hover {
+    color: rgb(0, 81, 255);
+    text-decoration: underline;
+}
+
+.bloghometxt {
+    margin-top: -.5rem
+}
 
 .allarticle {
-    margin-top: -1rem;
+    margin-top: -6rem;
 }
 
 .title {

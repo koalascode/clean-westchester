@@ -33,7 +33,7 @@ export default function NavBar() {
         <div className={styles.container}>
         <div className={styles.main}>
         <Link href="/" passHref>
-        <h1 className={styles.headername}>Clean Westchester</h1>  
+            <h1 className={styles.headername}>Clean Westchester</h1>  
         </Link>
           <div className={styles.flexlinks}>
               <Link href="/aboutus" passHref>
