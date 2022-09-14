@@ -33,8 +33,7 @@ export default function Article({ allprops, pageprops }) {
             </Head>
             <Link href="/articles" passHref>
                 <div className={styles.cwlogocontainer}>
-                <Image src="/greencwlogo.png" className={styles.cwlogo} width={100} height={100} layout='raw'/>
-                <p className={styles.bloghometxt}>← Blog Home</p>
+                <Image src="/cwarticlelogo.png" className={styles.cwlogo} width={160} height={100} layout='raw'/>
                 </div>
             </Link>
             <div className={styles.allarticle}>
