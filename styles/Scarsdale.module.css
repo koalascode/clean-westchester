@@ -1,0 +1,37 @@
+.container { 
+    height: 100vh;
+    background-color: #1C1B1B;
+    background-image: radial-gradient(
+      rgba(255, 255, 255, 0.1) 9%, 
+      transparent 9%
+    );
+    background-position: 0% 0%;
+    background-size: 1vmin 1vmin;
+    z-index: 1;
+    
+}
+
+.maincontainer {
+    border: 1px solid grey;
+    color: white;
+    width: 60%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.img {
+    border-radius: 5px;
+}
+
+.button {
+    background: none;
+    border: 1px #424141 solid;
+    border-radius: 5px;
+    padding: .5rem;
+    width: 15rem; 
+    cursor: pointer;
+    margin: 0 auto;
+    transition: all 500ms ease;
+    color: inherit;
+}
