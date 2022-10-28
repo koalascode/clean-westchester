@@ -5,7 +5,7 @@ import Link from 'next/link'
 import styles from '../../styles/Scarsdale.module.css'
 import HamNavBar from '../../components/minimalnavbar'
 
-export default function HomePage() {
+export default function ScarsdaleHomePage() {
     return (
         <div className={styles.container}>
             
