@@ -16,7 +16,7 @@ export default function ScarsdaleHomePage() {
             </Head>
             
             <div className={styles.maincontainer}>
-                <div class={styles.sectone}>
+                <div className={styles.sectone}>
                     <h1>Scarsdale Community and Environmental Action Club</h1>
                 </div>
                 <div>
