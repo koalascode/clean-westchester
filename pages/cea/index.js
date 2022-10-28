@@ -25,7 +25,9 @@ export default function HomePage() {
                     <h3>If that has not convinced you, hopefully this photo of a dog will:</h3>
                     <Image className={styles.img} src="/dogphto.png" width={600} height={400}/>
                     <p>This dog shows how happy the Scarsdale community will be when the club is accepted.</p>
-                    <button className={styles.button}>Go to the rest of the site</button>
+                    <Link href="/">
+                        <button className={styles.button}>Go to the rest of the site</button>
+                    </Link>
                 </div>
             </div>
         </div>
