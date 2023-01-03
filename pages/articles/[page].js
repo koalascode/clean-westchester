@@ -20,7 +20,7 @@ export default function Article({ allprops, pageprops }) {
         </ul>
         {x.type === "to_do" ? <form><input type="checkbox"/><label>{x?.to_do?.rich_text[0].plain_text}</label></form> : null}
         {x.type === "quote" ? <p className={styles.quote}>&quot;{x?.quote?.rich_text[0]?.plain_text}&quot;</p> : null} 
-        {x.type === "image" ? <div className={styles.imagediv}><Image className={styles.articleimage} src={x.image?.external?.url == undefined ? x?.image?.file?.url.toString() : x?.image?.external?.url.toString()} width={600} height={400} layout='raw'/></div> : null}
+        {x.type === "image" ? <div className={styles.imagediv}><img className={styles.articleimage} src={x.image?.external?.url == undefined ? x?.image?.file?.url.toString() : x?.image?.external?.url.toString()} width={600} height={400} layout='raw'/></div> : null}
         {x.type === "video" ? <iframe className={styles.articlevideo} width={560} height={315} layout='raw' src={x?.video?.external?.url.toString().replace(".be/", ".be/embed/").replace("://youtu.be/", "://www.youtube.com/")} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> : null} 
         </div>
        
@@ -33,7 +33,7 @@ export default function Article({ allprops, pageprops }) {
             </Head>
             <Link href="/articles" passHref>
                 <div className={styles.cwlogocontainer}>
-                <Image src="/cwarticlelogo.png" className={styles.cwlogo} width={160} height={100} layout='raw'/>
+                <img src="/cwarticlelogo.png" className={styles.cwlogo} width={160} height={100} layout='raw'/>
                 </div>
             </Link>
             <div className={styles.allarticle}>
@@ -42,10 +42,10 @@ export default function Article({ allprops, pageprops }) {
                 <h1 className={styles.title}>{allprops.properties.Name.title[0].plain_text}</h1>
                 {allprops.properties.CreatedBy.people.map(x =>
                     <div className={styles.writer} key={x.name}>
-                        <Image className={styles.writeravater} src={x.avatar_url} width={60} height={60}/>
+                        <img className={styles.writeravater} src={x.avatar_url} width={60} height={60}/>
                         <h3 key={x.name}>{x.name}, Clean Westchester</h3>
                     </div>)}
-                <Image className={styles.coverimage} src={allprops.properties.Image.url} width={800} height={600} layout='raw'/>
+                <img className={styles.coverimage} src={allprops.properties.Image.url} width={800} height={600} layout='raw'/>
                 <p className={styles.publisheddate}>{allprops.properties.DatePublished.date.start}</p>
                 <div className={styles.headerinfo}>
                     
@@ -61,7 +61,7 @@ export default function Article({ allprops, pageprops }) {
                     <div className={styles.editorsmain}>   
                         <p className={styles.editorhead}>Edited By: </p>
                         <div className={styles.editors}>
-                            {allprops.properties.EditedBy.people.map(x => <div key={x.name} className={styles.editorflex}><Image className={styles.editoravatar} src={x.avatar_url} width={60} height={60}/><p className={styles.editorsname}>{x.name}, Clean Westchester</p></div>)}
+                            {allprops.properties.EditedBy.people.map(x => <div key={x.name} className={styles.editorflex}><img className={styles.editoravatar} src={x.avatar_url} width={60} height={60}/><p className={styles.editorsname}>{x.name}, Clean Westchester</p></div>)}
                         </div>
                     </div>
             : null}  

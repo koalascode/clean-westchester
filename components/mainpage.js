@@ -47,7 +47,7 @@ export default function Home() {
       <br /><br />
       <div className={styles.wildwest}>
       <div>
-        <Image src="/rickphotocleaningone.jpg" width={580} height={400} className={styles.sideimage}/>
+        <img src="/rickphotocleaningone.jpg" width={580} height={400} className={styles.sideimage}/>
       </div>
       <div>
         <h1 className={styles.sideimagetexthead}>What we <b className={styles.accentedtext}>are Doing</b> 🌳</h1>
@@ -75,7 +75,7 @@ export default function Home() {
        
       </div>
       <div>
-        <Image src="/beeimage.jpg" width={400} height={300} className={styles.sideimage}/>
+        <img src="/beeimage.jpg" width={400} height={300} className={styles.sideimage}/>
       </div>
     </div>
 

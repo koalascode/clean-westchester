@@ -27,7 +27,7 @@ export default function BlogHome({properties, allprops, rightSideProps}) {
                         <p className={styles.blogdate}>{prop?.properties?.DatePublished?.date?.start}</p>
                       {prop?.properties?.CreatedBy.people.map(x => 
                         <div key={x.name} className={styles.writer}>
-                          <Image className={styles.writeravater} src={x.avatar_url} width={60} height={60}/>
+                          <img className={styles.writeravater} src={x.avatar_url} width={60} height={60}/>
                           <h3 key={x.name}>{x.name}</h3>
                         </div>)}
                         <h2 className={styles.blogtitle}>{prop?.properties?.Name?.title[0]?.plain_text}</h2>
@@ -35,7 +35,7 @@ export default function BlogHome({properties, allprops, rightSideProps}) {
                     </div>
                 </Link>
             </div>
-            <Image className={styles.coverimage} src={`${prop?.properties?.Image?.url}`} width={800} height={600} layout='raw'/>
+            <img className={styles.coverimage} src={`${prop?.properties?.Image?.url}`} width={800} height={600} layout='raw'/>
          
           
          </div> 
@@ -50,7 +50,7 @@ export default function BlogHome({properties, allprops, rightSideProps}) {
                    <p className={styles.blogdate}>{prop?.properties?.DatePublished?.date?.start}</p>
                  {prop?.properties?.CreatedBy.people.map(x => 
                    <div key={x.name} className={styles.writer}>
-                     <Image className={styles.writeravater} src={x.avatar_url} width={60} height={60}/>
+                     <img className={styles.writeravater} src={x.avatar_url} width={60} height={60}/>
                      <h3 key={x.name}>{x.name}</h3>
                    </div>)}
                    <h2 className={styles.blogtitle}>{prop?.properties?.Name?.title[0]?.plain_text}</h2>
@@ -58,7 +58,7 @@ export default function BlogHome({properties, allprops, rightSideProps}) {
                </div>
            </Link>
        </div>
-       <Image className={styles.coverimage} src={`${prop?.properties?.Image?.url}`} width={800} height={600} layout='raw'/>
+       <img className={styles.coverimage} src={`${prop?.properties?.Image?.url}`} width={800} height={600} layout='raw'/>
     
      
     </div> 

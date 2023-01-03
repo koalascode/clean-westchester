@@ -23,7 +23,7 @@ export default function ScarsdaleHomePage() {
                     <h2>This page has not been created yet, but <b>if you are part of the school government and are currently considering this club, we would very much appreciate it if you accepted the club :)</b></h2>
                     <br />
                     <h3>If that has not convinced you, hopefully this photo of a dog will:</h3>
-                    <Image className={styles.img} src="/dogphto.png" width={600} height={400}/>
+                    <img className={styles.img} src="/dogphto.png" width={600} height={400}/>
                     <p>This dog shows how happy the Scarsdale community will be when the club is accepted.</p>
                     <Link href="/">
                         <button className={styles.button}>Go to the rest of the site</button>
