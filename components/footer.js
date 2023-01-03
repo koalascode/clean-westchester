@@ -50,16 +50,16 @@ export default function Footer() {
                     <p className={styles.builtwithlovefooter}><center>Built with ❤️ by Aaron Anidjar</center></p>
                     <div className={styles.sitescontainer}>
                      <a href="https://www.instagram.com/cleanwestchester/?hl=en">
-                        <Image className={styles.siteslink} src="/instagramlogo.webp" width={30} height={30} alt="Instagram logo"/>
+                        <img className={styles.siteslink} src="/instagramlogo.webp" width={30} height={30} alt="Instagram logo"/>
                         </a>
                         <a href="mailto:cleanwestchester@gmail.com">
-                        <Image className={styles.siteslink} src="/gmaillogo.png" width={50} height={30} alt="gmail logo"/>
+                        <img className={styles.siteslink} src="/gmaillogo.png" width={50} height={30} alt="gmail logo"/>
                         </a>
                         <a href="https://github.com/koalascode" target="_blank" rel="noreferrer">
-                        <Image className={styles.siteslink} src="/githublogo.png" width={30} height={30} alt="github logo"/>
+                        <img className={styles.siteslink} src="/githublogo.png" width={30} height={30} alt="github logo"/>
                         </a>
                         <a href="https://www.youtube.com/channel/UCWXDVtw6EhVyX-2zL0KmtKw" target="_blank" rel="noreferrer">
-                        <Image className={styles.siteslink} src="/ytlogo.png" width={30} height={30} alt="youtube logo"/>
+                        <img className={styles.siteslink} src="/ytlogo.png" width={30} height={30} alt="youtube logo"/>
                         </a>
                         </div>
                     </div>
